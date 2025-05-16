@@ -45,7 +45,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.btnThoat = new System.Windows.Forms.Button();
+            this.btnQuayLoai = new System.Windows.Forms.Button();
             this.btnXacNhanThayDoi = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -55,8 +55,10 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 35F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(254)));
-            this.label1.Location = new System.Drawing.Point(525, 51);
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 35F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
+            this.label1.ForeColor = System.Drawing.Color.Transparent;
+            this.label1.Location = new System.Drawing.Point(500, 47);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(372, 54);
             this.label1.TabIndex = 0;
@@ -65,7 +67,9 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
+            this.label2.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label2.Location = new System.Drawing.Point(30, 42);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(121, 20);
@@ -75,11 +79,13 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.groupBox1.Controls.Add(this.txtTenNhanVien);
             this.groupBox1.Controls.Add(this.txtMaNhanVien);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
+            this.groupBox1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.groupBox1.Location = new System.Drawing.Point(12, 181);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(800, 154);
@@ -107,7 +113,9 @@
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
+            this.label3.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label3.Location = new System.Drawing.Point(30, 104);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(127, 20);
@@ -116,6 +124,7 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.groupBox2.Controls.Add(this.rdoHienThiMatKhauMoi);
             this.groupBox2.Controls.Add(this.rdoHienThiMatKhauXACNHAN);
             this.groupBox2.Controls.Add(this.rdoHienThiMatKhauCu);
@@ -126,6 +135,7 @@
             this.groupBox2.Controls.Add(this.label4);
             this.groupBox2.Controls.Add(this.label5);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
+            this.groupBox2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.groupBox2.Location = new System.Drawing.Point(12, 351);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(800, 231);
@@ -136,35 +146,41 @@
             // rdoHienThiMatKhauMoi
             // 
             this.rdoHienThiMatKhauMoi.AutoSize = true;
+            this.rdoHienThiMatKhauMoi.BackColor = System.Drawing.Color.Transparent;
+            this.rdoHienThiMatKhauMoi.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.rdoHienThiMatKhauMoi.Location = new System.Drawing.Point(657, 110);
             this.rdoHienThiMatKhauMoi.Name = "rdoHienThiMatKhauMoi";
             this.rdoHienThiMatKhauMoi.Size = new System.Drawing.Size(131, 17);
             this.rdoHienThiMatKhauMoi.TabIndex = 9;
             this.rdoHienThiMatKhauMoi.TabStop = true;
             this.rdoHienThiMatKhauMoi.Text = "Hiển Thị Mật Khẩu";
-            this.rdoHienThiMatKhauMoi.UseVisualStyleBackColor = true;
+            this.rdoHienThiMatKhauMoi.UseVisualStyleBackColor = false;
             // 
             // rdoHienThiMatKhauXACNHAN
             // 
             this.rdoHienThiMatKhauXACNHAN.AutoSize = true;
+            this.rdoHienThiMatKhauXACNHAN.BackColor = System.Drawing.Color.Transparent;
+            this.rdoHienThiMatKhauXACNHAN.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.rdoHienThiMatKhauXACNHAN.Location = new System.Drawing.Point(657, 172);
             this.rdoHienThiMatKhauXACNHAN.Name = "rdoHienThiMatKhauXACNHAN";
             this.rdoHienThiMatKhauXACNHAN.Size = new System.Drawing.Size(131, 17);
             this.rdoHienThiMatKhauXACNHAN.TabIndex = 8;
             this.rdoHienThiMatKhauXACNHAN.TabStop = true;
             this.rdoHienThiMatKhauXACNHAN.Text = "Hiển Thị Mật Khẩu";
-            this.rdoHienThiMatKhauXACNHAN.UseVisualStyleBackColor = true;
+            this.rdoHienThiMatKhauXACNHAN.UseVisualStyleBackColor = false;
             // 
             // rdoHienThiMatKhauCu
             // 
             this.rdoHienThiMatKhauCu.AutoSize = true;
+            this.rdoHienThiMatKhauCu.BackColor = System.Drawing.Color.Transparent;
+            this.rdoHienThiMatKhauCu.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.rdoHienThiMatKhauCu.Location = new System.Drawing.Point(657, 48);
             this.rdoHienThiMatKhauCu.Name = "rdoHienThiMatKhauCu";
             this.rdoHienThiMatKhauCu.Size = new System.Drawing.Size(131, 17);
             this.rdoHienThiMatKhauCu.TabIndex = 7;
             this.rdoHienThiMatKhauCu.TabStop = true;
             this.rdoHienThiMatKhauCu.Text = "Hiển Thị Mật Khẩu";
-            this.rdoHienThiMatKhauCu.UseVisualStyleBackColor = true;
+            this.rdoHienThiMatKhauCu.UseVisualStyleBackColor = false;
             // 
             // txtXacNhanMatKhauMoi
             // 
@@ -177,7 +193,9 @@
             // label6
             // 
             this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
+            this.label6.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label6.Location = new System.Drawing.Point(30, 166);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(201, 20);
@@ -203,7 +221,9 @@
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
+            this.label4.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label4.Location = new System.Drawing.Point(30, 104);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(118, 20);
@@ -213,7 +233,9 @@
             // label5
             // 
             this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
+            this.label5.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label5.Location = new System.Drawing.Point(30, 42);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(112, 20);
@@ -222,9 +244,11 @@
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.btnThoat);
+            this.groupBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.groupBox3.Controls.Add(this.btnQuayLoai);
             this.groupBox3.Controls.Add(this.btnXacNhanThayDoi);
             this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
+            this.groupBox3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.groupBox3.Location = new System.Drawing.Point(854, 181);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(424, 218);
@@ -232,17 +256,17 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Chức Năng";
             // 
-            // btnThoat
+            // btnQuayLoai
             // 
-            this.btnThoat.BackColor = System.Drawing.SystemColors.Desktop;
-            this.btnThoat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnThoat.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnThoat.Location = new System.Drawing.Point(37, 131);
-            this.btnThoat.Name = "btnThoat";
-            this.btnThoat.Size = new System.Drawing.Size(357, 56);
-            this.btnThoat.TabIndex = 1;
-            this.btnThoat.Text = "Thoát";
-            this.btnThoat.UseVisualStyleBackColor = false;
+            this.btnQuayLoai.BackColor = System.Drawing.SystemColors.Desktop;
+            this.btnQuayLoai.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnQuayLoai.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnQuayLoai.Location = new System.Drawing.Point(37, 131);
+            this.btnQuayLoai.Name = "btnQuayLoai";
+            this.btnQuayLoai.Size = new System.Drawing.Size(357, 56);
+            this.btnQuayLoai.TabIndex = 1;
+            this.btnQuayLoai.Text = "Thoát";
+            this.btnQuayLoai.UseVisualStyleBackColor = false;
             // 
             // btnXacNhanThayDoi
             // 
@@ -260,11 +284,14 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.BackgroundImage = global::GUI_PolyCafe.Properties.Resources.BACK_Poly1;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1313, 628);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.label1);
             this.DoubleBuffered = true;
             this.MaximumSize = new System.Drawing.Size(1329, 667);
             this.MinimumSize = new System.Drawing.Size(1329, 667);
@@ -300,7 +327,7 @@
         private System.Windows.Forms.TextBox txtXacNhanMatKhauMoi;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.Button btnThoat;
+        private System.Windows.Forms.Button btnQuayLoai;
         private System.Windows.Forms.Button btnXacNhanThayDoi;
     }
 }

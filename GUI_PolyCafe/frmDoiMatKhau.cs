@@ -26,5 +26,10 @@ namespace GUI_PolyCafe
         {
 
         }
+
+        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

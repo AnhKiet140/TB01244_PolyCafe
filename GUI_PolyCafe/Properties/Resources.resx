@@ -121,19 +121,79 @@
   <data name="Main_PoLy" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Main_PoLy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="POLY" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\POLY.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="BACK2_Button_Poly" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BACK2_Button_Poly.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="BACK" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\BACK.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="system_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\system_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="BACK_Poly1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BACK_Poly1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="POLY_Login" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\POLY_Login.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="POLY" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\POLY.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BACK_2_POLY" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BACK_2_POLY.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="black_ham" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\black_ham.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="search 24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\search 24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="exit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\exit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="wrench" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\wrench.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="MainFix_PoLy" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\MainFix_PoLy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BACKGROUD_Poly" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BACKGROUD_Poly.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BACK" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BACK.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="system" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\system.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="POLY_ResetPassWord" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\POLY_ResetPassWord.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="erase" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\erase.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="refresh" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\refresh.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fix" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fix.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="searching" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\searching.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="eye_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\eye_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BACK1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BACK1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="search" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\search.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="POLY_Login" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\POLY_Login.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BACK_Button_Poly" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BACK_Button_Poly.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="more" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\more.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bin" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bin.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

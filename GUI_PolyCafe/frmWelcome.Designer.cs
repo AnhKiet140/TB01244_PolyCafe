@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmWelcome));
             this.progressBar = new System.Windows.Forms.ProgressBar();
             this.SuspendLayout();
             // 
@@ -48,6 +49,7 @@
             this.ClientSize = new System.Drawing.Size(1286, 736);
             this.Controls.Add(this.progressBar);
             this.DoubleBuffered = true;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximumSize = new System.Drawing.Size(1302, 775);
             this.MinimumSize = new System.Drawing.Size(1302, 775);
             this.Name = "frmWelcome";

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmLogin));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.txtTenDangNhap = new System.Windows.Forms.TextBox();
@@ -76,8 +77,10 @@
             this.txtMatKhau.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
             this.txtMatKhau.Location = new System.Drawing.Point(701, 298);
             this.txtMatKhau.Name = "txtMatKhau";
+            this.txtMatKhau.PasswordChar = '*';
             this.txtMatKhau.Size = new System.Drawing.Size(486, 30);
             this.txtMatKhau.TabIndex = 4;
+            this.txtMatKhau.TextChanged += new System.EventHandler(this.txtMatKhau_TextChanged);
             // 
             // label3
             // 
@@ -129,13 +132,14 @@
             this.chkHienMatKhau.TabIndex = 7;
             this.chkHienMatKhau.Text = "Hiện mật khẩu";
             this.chkHienMatKhau.UseVisualStyleBackColor = false;
+            this.chkHienMatKhau.CheckedChanged += new System.EventHandler(this.chkHienMatKhau_CheckedChanged);
             // 
             // linkLabel1
             // 
             this.linkLabel1.AutoSize = true;
             this.linkLabel1.BackColor = System.Drawing.Color.Transparent;
             this.linkLabel1.DisabledLinkColor = System.Drawing.Color.Transparent;
-            this.linkLabel1.Location = new System.Drawing.Point(1101, 331);
+            this.linkLabel1.Location = new System.Drawing.Point(1101, 338);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(86, 13);
             this.linkLabel1.TabIndex = 8;
@@ -159,6 +163,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.DoubleBuffered = true;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximumSize = new System.Drawing.Size(1291, 710);
             this.MinimumSize = new System.Drawing.Size(1291, 710);
             this.Name = "frmLogin";

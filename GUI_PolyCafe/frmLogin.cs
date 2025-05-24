@@ -48,7 +48,13 @@ namespace GUI_PolyCafe
 
         private void btnThoat_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("Bạn có muốn thoát chương trình?", "Xác nhận", MessageBoxButtons.YesNo) == DialogResult.Yes)
+             DialogResult result = MessageBox.Show(
+             "Bạn có chắc chắn muốn thoát không?",
+             "Xác nhận thoát",
+             MessageBoxButtons.YesNo,
+             MessageBoxIcon.Question);
+
+            if (result == DialogResult.Yes)
             {
                 Application.Exit();
             }
@@ -60,6 +66,16 @@ namespace GUI_PolyCafe
             {
                 e.Cancel = true;
             }
+        }
+
+        private void chkHienMatKhau_CheckedChanged(object sender, EventArgs e)
+        {
+            txtMatKhau.PasswordChar = chkHienMatKhau.Checked ? '\0' : '*';
+        }
+
+        private void txtMatKhau_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

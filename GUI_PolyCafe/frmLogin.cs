@@ -22,7 +22,51 @@ namespace GUI_PolyCafe
             InitializeComponent();
         }
 
-        private void btnDangNhap_Click(object sender, EventArgs e)
+        private void frmLogin_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (e.CloseReason == CloseReason.UserClosing)
+            {
+                e.Cancel = true;
+            }
+        }
+
+        private void txtMatKhau_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2CheckBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chkHienMatKhau.Checked)
+            {
+                txtMatKhau.UseSystemPasswordChar = true;
+            }
+            else
+            {
+                txtMatKhau.UseSystemPasswordChar = false;
+            }
+        }
+
+        private void frmLogin_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnThoat_Click_1(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show(
+             "Bạn có chắc chắn muốn thoát không?",
+             "Xác nhận thoát",
+             MessageBoxButtons.YesNo,
+             MessageBoxIcon.Question);
+
+            if (result == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
+        }
+
+        private void btnDangNhap_Click_1(object sender, EventArgs e)
         {
             string username = txtTenDangNhap.Text;
             string password = txtMatKhau.Text;
@@ -40,42 +84,15 @@ namespace GUI_PolyCafe
                 }
                 AuthUtil.user = nv;
 
-                frmMainForm main = new frmMainForm();
+                frmMainForm1 main = new frmMainForm1();
                 main.Show();
                 this.Hide();
             }
         }
 
-        private void btnThoat_Click(object sender, EventArgs e)
-        {
-             DialogResult result = MessageBox.Show(
-             "Bạn có chắc chắn muốn thoát không?",
-             "Xác nhận thoát",
-             MessageBoxButtons.YesNo,
-             MessageBoxIcon.Question);
-
-            if (result == DialogResult.Yes)
-            {
-                Application.Exit();
-            }
-        }
-
-        private void frmLogin_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            if (e.CloseReason == CloseReason.UserClosing)
-            {
-                e.Cancel = true;
-            }
-        }
-
-        private void chkHienMatKhau_CheckedChanged(object sender, EventArgs e)
+        private void chkHienMatKhau_CheckedChanged_1(object sender, EventArgs e)
         {
             txtMatKhau.PasswordChar = chkHienMatKhau.Checked ? '\0' : '*';
-        }
-
-        private void txtMatKhau_TextChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }

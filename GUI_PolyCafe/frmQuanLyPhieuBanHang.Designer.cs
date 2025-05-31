@@ -31,6 +31,10 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmQuanLyPhieuBanHang));
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.chkKhongHoatDong = new System.Windows.Forms.CheckBox();
+            this.chkHoatDong = new System.Windows.Forms.CheckBox();
+            this.dtpNgayTao = new System.Windows.Forms.DateTimePicker();
             this.txtMaNhanVien = new System.Windows.Forms.TextBox();
             this.txtMaThe = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
@@ -38,8 +42,8 @@
             this.txtMaPhieu = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.dtpNgayTao = new System.Windows.Forms.DateTimePicker();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
@@ -47,10 +51,6 @@
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.chkKhongHoatDong = new System.Windows.Forms.CheckBox();
-            this.chkHoatDong = new System.Windows.Forms.CheckBox();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
             this.btnTimKiem = new System.Windows.Forms.Button();
             this.txtTimKiem = new System.Windows.Forms.TextBox();
@@ -64,8 +64,8 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.groupBox2.SuspendLayout();
-            this.groupBox1.SuspendLayout();
             this.groupBox5.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.groupBox6.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox4.SuspendLayout();
@@ -104,6 +104,52 @@
             this.groupBox2.TabIndex = 3;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Nhập Thông Tin";
+            // 
+            // groupBox5
+            // 
+            this.groupBox5.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.groupBox5.Controls.Add(this.chkKhongHoatDong);
+            this.groupBox5.Controls.Add(this.chkHoatDong);
+            this.groupBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
+            this.groupBox5.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.groupBox5.Location = new System.Drawing.Point(20, 238);
+            this.groupBox5.Name = "groupBox5";
+            this.groupBox5.Size = new System.Drawing.Size(585, 81);
+            this.groupBox5.TabIndex = 18;
+            this.groupBox5.TabStop = false;
+            this.groupBox5.Text = "Trạng Thái";
+            // 
+            // chkKhongHoatDong
+            // 
+            this.chkKhongHoatDong.AutoSize = true;
+            this.chkKhongHoatDong.Font = new System.Drawing.Font("Microsoft YaHei UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
+            this.chkKhongHoatDong.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.chkKhongHoatDong.Location = new System.Drawing.Point(327, 31);
+            this.chkKhongHoatDong.Name = "chkKhongHoatDong";
+            this.chkKhongHoatDong.Size = new System.Drawing.Size(154, 23);
+            this.chkKhongHoatDong.TabIndex = 2;
+            this.chkKhongHoatDong.Text = "Không Hoạt động";
+            this.chkKhongHoatDong.UseVisualStyleBackColor = true;
+            // 
+            // chkHoatDong
+            // 
+            this.chkHoatDong.AutoSize = true;
+            this.chkHoatDong.Font = new System.Drawing.Font("Microsoft YaHei UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
+            this.chkHoatDong.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.chkHoatDong.Location = new System.Drawing.Point(91, 31);
+            this.chkHoatDong.Name = "chkHoatDong";
+            this.chkHoatDong.Size = new System.Drawing.Size(104, 23);
+            this.chkHoatDong.TabIndex = 1;
+            this.chkHoatDong.Text = "Hoạt động";
+            this.chkHoatDong.UseVisualStyleBackColor = true;
+            // 
+            // dtpNgayTao
+            // 
+            this.dtpNgayTao.Location = new System.Drawing.Point(164, 209);
+            this.dtpNgayTao.Name = "dtpNgayTao";
+            this.dtpNgayTao.Size = new System.Drawing.Size(442, 21);
+            this.dtpNgayTao.TabIndex = 16;
             // 
             // txtMaNhanVien
             // 
@@ -173,13 +219,6 @@
             this.label2.TabIndex = 3;
             this.label2.Text = "Mã Phiếu";
             // 
-            // dtpNgayTao
-            // 
-            this.dtpNgayTao.Location = new System.Drawing.Point(164, 209);
-            this.dtpNgayTao.Name = "dtpNgayTao";
-            this.dtpNgayTao.Size = new System.Drawing.Size(442, 21);
-            this.dtpNgayTao.TabIndex = 16;
-            // 
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.Transparent;
@@ -199,6 +238,15 @@
             this.groupBox1.TabIndex = 17;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Nhập Thông Tin Chi Tiết";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(162, 37);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(443, 28);
+            this.comboBox1.TabIndex = 16;
             // 
             // textBox1
             // 
@@ -268,54 +316,6 @@
             this.label9.TabIndex = 3;
             this.label9.Text = "Sản Phẩm";
             // 
-            // comboBox1
-            // 
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(162, 37);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(443, 28);
-            this.comboBox1.TabIndex = 16;
-            // 
-            // groupBox5
-            // 
-            this.groupBox5.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.groupBox5.Controls.Add(this.chkKhongHoatDong);
-            this.groupBox5.Controls.Add(this.chkHoatDong);
-            this.groupBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
-            this.groupBox5.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.groupBox5.Location = new System.Drawing.Point(20, 238);
-            this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(585, 81);
-            this.groupBox5.TabIndex = 18;
-            this.groupBox5.TabStop = false;
-            this.groupBox5.Text = "Trạng Thái";
-            // 
-            // chkKhongHoatDong
-            // 
-            this.chkKhongHoatDong.AutoSize = true;
-            this.chkKhongHoatDong.Font = new System.Drawing.Font("Microsoft YaHei UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
-            this.chkKhongHoatDong.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.chkKhongHoatDong.Location = new System.Drawing.Point(327, 31);
-            this.chkKhongHoatDong.Name = "chkKhongHoatDong";
-            this.chkKhongHoatDong.Size = new System.Drawing.Size(154, 23);
-            this.chkKhongHoatDong.TabIndex = 2;
-            this.chkKhongHoatDong.Text = "Không Hoạt động";
-            this.chkKhongHoatDong.UseVisualStyleBackColor = true;
-            // 
-            // chkHoatDong
-            // 
-            this.chkHoatDong.AutoSize = true;
-            this.chkHoatDong.Font = new System.Drawing.Font("Microsoft YaHei UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
-            this.chkHoatDong.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.chkHoatDong.Location = new System.Drawing.Point(91, 31);
-            this.chkHoatDong.Name = "chkHoatDong";
-            this.chkHoatDong.Size = new System.Drawing.Size(104, 23);
-            this.chkHoatDong.TabIndex = 1;
-            this.chkHoatDong.Text = "Hoạt động";
-            this.chkHoatDong.UseVisualStyleBackColor = true;
-            // 
             // groupBox6
             // 
             this.groupBox6.BackColor = System.Drawing.Color.Transparent;
@@ -372,7 +372,7 @@
             // 
             // btnThem
             // 
-            this.btnThem.BackgroundImage = global::GUI_PolyCafe.Properties.Resources.BACK2_Button_Poly;
+            this.btnThem.BackColor = System.Drawing.SystemColors.Window;
             this.btnThem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnThem.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
             this.btnThem.Image = global::GUI_PolyCafe.Properties.Resources.more;
@@ -383,11 +383,11 @@
             this.btnThem.Size = new System.Drawing.Size(183, 61);
             this.btnThem.TabIndex = 18;
             this.btnThem.Text = "Thêm";
-            this.btnThem.UseVisualStyleBackColor = true;
+            this.btnThem.UseVisualStyleBackColor = false;
             // 
             // btnSua
             // 
-            this.btnSua.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSua.BackgroundImage")));
+            this.btnSua.BackColor = System.Drawing.SystemColors.Window;
             this.btnSua.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnSua.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
             this.btnSua.Image = global::GUI_PolyCafe.Properties.Resources.wrench;
@@ -398,11 +398,11 @@
             this.btnSua.Size = new System.Drawing.Size(183, 61);
             this.btnSua.TabIndex = 6;
             this.btnSua.Text = "Sửa";
-            this.btnSua.UseVisualStyleBackColor = true;
+            this.btnSua.UseVisualStyleBackColor = false;
             // 
             // btnXoa
             // 
-            this.btnXoa.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnXoa.BackgroundImage")));
+            this.btnXoa.BackColor = System.Drawing.SystemColors.Window;
             this.btnXoa.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnXoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
             this.btnXoa.Image = global::GUI_PolyCafe.Properties.Resources.bin;
@@ -413,11 +413,11 @@
             this.btnXoa.Size = new System.Drawing.Size(183, 61);
             this.btnXoa.TabIndex = 5;
             this.btnXoa.Text = "Xoá";
-            this.btnXoa.UseVisualStyleBackColor = true;
+            this.btnXoa.UseVisualStyleBackColor = false;
             // 
             // btnLamMoi
             // 
-            this.btnLamMoi.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnLamMoi.BackgroundImage")));
+            this.btnLamMoi.BackColor = System.Drawing.SystemColors.Window;
             this.btnLamMoi.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnLamMoi.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
             this.btnLamMoi.Image = global::GUI_PolyCafe.Properties.Resources.refresh;
@@ -428,7 +428,7 @@
             this.btnLamMoi.Size = new System.Drawing.Size(183, 60);
             this.btnLamMoi.TabIndex = 4;
             this.btnLamMoi.Text = "Làm Mới";
-            this.btnLamMoi.UseVisualStyleBackColor = true;
+            this.btnLamMoi.UseVisualStyleBackColor = false;
             // 
             // groupBox4
             // 
@@ -495,10 +495,10 @@
             this.Text = "Quản Lý Phiếu Bán Hàng";
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.groupBox6.ResumeLayout(false);
             this.groupBox6.PerformLayout();
             this.groupBox3.ResumeLayout(false);

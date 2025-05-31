@@ -21,36 +21,6 @@ namespace GUI_PolyCafe
             InitializeComponent();
         }
 
-        private void btnXacNhanThayDoi_Click(object sender, EventArgs e)
-        {
-            if(!AuthUtil.user.MatKhau.Equals(txtMatKhauCu.Text))
-            {
-                MessageBox.Show(this, "Mật khẩu cũ không đúng. Vui lòng nhập lại");
-            }
-            else
-            {
-                if (!txtMatKhauMoi.Text.Equals(txtXacNhanMatKhauMoi.Text))
-                {
-                    MessageBox.Show(this, "Xác nhận mật khẩu chưa trùng khớp!");
-                }
-                else
-                {
-                    AuthUtil.user.MatKhau = txtMatKhauMoi.Text;
-
-                    if (busNhanVien.ResetMatKhau(AuthUtil.user.Email, txtMatKhauMoi.Text))
-                    {
-                        MessageBox.Show("Cập nhật mật khẩu thành công!!");
-                    }
-                    else MessageBox.Show("Đổi mật khẩu thất bại, vui lòng kiểm tra lại!!");
-                }
-            }
-        }
-
-        private void btnQuayLoai_Click(object sender, EventArgs e)
-        {
-                Close();
-        }
-
         private void frmDoiMatKhau_Load(object sender, EventArgs e)
         {
             if (AuthUtil.IsLogin())
@@ -94,6 +64,21 @@ namespace GUI_PolyCafe
         {
             if (changePicture)
             {
+                txtMatKhauCu.PasswordChar = '*';
+                picMatKhauCu.Image = Image.FromFile("D:\\MÔN CHUYÊN NGÀNH\\Hình Dự án mẫu\\eye_2.png");
+            }
+            else
+            {
+                txtMatKhauCu.PasswordChar = '\0';
+                picMatKhauCu.Image = Image.FromFile("D:\\MÔN CHUYÊN NGÀNH\\Hình Dự án mẫu\\eye_1.png");
+            }
+            changePicture = !changePicture;
+        }
+
+        private void picHienThiMatKhau_Click(object sender, EventArgs e)
+        {
+            if (changePicture)
+            {
                 txtMatKhauMoi.PasswordChar = '*';
                 picMatKhauMoi.Image = Image.FromFile("D:\\MÔN CHUYÊN NGÀNH\\Hình Dự án mẫu\\eye_2.png");
             }
@@ -105,7 +90,42 @@ namespace GUI_PolyCafe
             changePicture = !changePicture;
         }
 
-        private void picHienThiMatKhau_Click(object sender, EventArgs e)
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnDangNhap_Click(object sender, EventArgs e)
+        {
+            if (!AuthUtil.user.MatKhau.Equals(txtMatKhauCu.Text))
+            {
+                MessageBox.Show(this, "Mật khẩu cũ không đúng. Vui lòng nhập lại");
+            }
+            else
+            {
+                if (!txtMatKhauMoi.Text.Equals(txtXacNhanMatKhauMoi.Text))
+                {
+                    MessageBox.Show(this, "Xác nhận mật khẩu chưa trùng khớp!");
+                }
+                else
+                {
+                    AuthUtil.user.MatKhau = txtMatKhauMoi.Text;
+
+                    if (busNhanVien.ResetMatKhau(AuthUtil.user.Email, txtMatKhauMoi.Text))
+                    {
+                        MessageBox.Show("Cập nhật mật khẩu thành công!!");
+                    }
+                    else MessageBox.Show("Đổi mật khẩu thất bại, vui lòng kiểm tra lại!!");
+                }
+            }
+        }
+
+        private void btnThoat_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void picHienThiMatKhauMoi_Click(object sender, EventArgs e)
         {
             if (changePicture)
             {
@@ -118,11 +138,6 @@ namespace GUI_PolyCafe
                 picHienThiMatKhau.Image = Image.FromFile("D:\\MÔN CHUYÊN NGÀNH\\Hình Dự án mẫu\\eye_1.png");
             }
             changePicture = !changePicture;
-        }
-
-        private void label6_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

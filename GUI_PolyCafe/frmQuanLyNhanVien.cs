@@ -71,7 +71,80 @@ namespace GUI_PolyCafe
             chkNhanVien.Checked = true; // Mặc định chọn "Nhân viên"
         }
 
-        private void btnThem_Click(object sender, EventArgs e)
+        private void dgvDanhSachNhanVien_SelectionChanged(object sender, EventArgs e)
+        {
+            if (dgvDanhSachNhanVien.SelectedRows.Count > 0)
+            {
+                var row = dgvDanhSachNhanVien.SelectedRows[0];
+
+                txtMaNhanVien.Text = row.Cells["MaNhanVien"].Value?.ToString();
+                txtHoVaTen.Text = row.Cells["HoTen"].Value?.ToString();
+                txtEmail.Text = row.Cells["Email"].Value?.ToString();
+                txtMatKhau.Text = row.Cells["MatKhau"].Value?.ToString();
+
+
+                string vaiTro = row.Cells["VaiTro"].Value?.ToString();
+                if (vaiTro == "Qu" || vaiTro == "Quản Lý")
+                {
+                    chkQuanLy.Checked = true;
+                    chkNhanVien.Checked = false;
+                }
+                else if (vaiTro == "Nh" || vaiTro == "Nhân Viên")
+                {
+                    chkNhanVien.Checked = true;
+                    chkQuanLy.Checked = false;
+                }
+                else
+                {
+                    chkQuanLy.Checked = false;
+                    chkNhanVien.Checked = false;
+                }
+
+                // Xử lý cột Trạng Thái (Hoạt động hoặc Không hoạt động)
+                string trangThai = row.Cells["TrangThai"].Value?.ToString();
+                if (trangThai == "Hoạt động")
+                {
+                    chkHoatDong.Checked = true;
+                    chkKhongHoatDong.Checked = false;
+                }
+                else if (trangThai == "Không hoạt động")
+                {
+                    chkKhongHoatDong.Checked = true;
+                    chkHoatDong.Checked = false;
+                }
+                else
+                {
+                    chkHoatDong.Checked = false;
+                    chkKhongHoatDong.Checked = false;
+                }
+            }
+        }
+
+        private void chkNhanVien_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chkQuanLy.Checked)
+                chkNhanVien.Checked = false;
+        }
+
+        private void chkQuanLy_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chkNhanVien.Checked)
+                chkQuanLy.Checked = false;
+        }
+
+        private void chkHoatDong_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chkKhongHoatDong.Checked)
+                chkHoatDong.Checked = false;
+        }
+
+        private void chkKhongHoatDong_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chkHoatDong.Checked)
+                chkKhongHoatDong.Checked = false;
+        }
+
+        private void btnThem_Click_1(object sender, EventArgs e)
         {
             BUSNhanVien bUSNhanVien = new BUSNhanVien();
             try
@@ -110,13 +183,7 @@ namespace GUI_PolyCafe
             }
         }
 
-        private void btnLamMoi_Click(object sender, EventArgs e)
-        {
-            ClearForm();
-            LoadDanhSachNhanVien();
-        }
-
-        private void btnSua_Click(object sender, EventArgs e)
+        private void btnSua_Click_1(object sender, EventArgs e)
         {
             string maNV = txtMaNhanVien.Text.Trim();
             string hoTen = txtHoVaTen.Text.Trim();
@@ -171,7 +238,7 @@ namespace GUI_PolyCafe
             }
         }
 
-        private void btnXoa_Click(object sender, EventArgs e)
+        private void btnXoa_Click_1(object sender, EventArgs e)
         {
             string maNhanVien = txtMaNhanVien.Text.Trim();
             string name = txtHoVaTen.Text.Trim();
@@ -215,65 +282,16 @@ namespace GUI_PolyCafe
                 {
                     MessageBox.Show(kq, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
-
             }
         }
 
-        private void btnThoat_Click(object sender, EventArgs e)
+        private void btnLamMoi_Click_1(object sender, EventArgs e)
         {
-            Close();
+            ClearForm();
+            LoadDanhSachNhanVien();
         }
 
-        private void dgvDanhSachNhanVien_SelectionChanged(object sender, EventArgs e)
-        {
-            if (dgvDanhSachNhanVien.SelectedRows.Count > 0)
-            {
-                var row = dgvDanhSachNhanVien.SelectedRows[0];
-
-                txtMaNhanVien.Text = row.Cells["MaNhanVien"].Value?.ToString();
-                txtHoVaTen.Text = row.Cells["HoTen"].Value?.ToString();
-                txtEmail.Text = row.Cells["Email"].Value?.ToString();
-                txtMatKhau.Text = row.Cells["MatKhau"].Value?.ToString();
-
-
-                string vaiTro = row.Cells["VaiTro"].Value?.ToString();
-                if (vaiTro == "Qu" || vaiTro == "Quản Lý")
-                {
-                    chkQuanLy.Checked = true;
-                    chkNhanVien.Checked = false;
-                }
-                else if (vaiTro == "Nh" || vaiTro == "Nhân Viên")
-                {
-                    chkNhanVien.Checked = true;
-                    chkQuanLy.Checked = false;
-                }
-                else
-                {
-                    chkQuanLy.Checked = false;
-                    chkNhanVien.Checked = false;
-                }
-
-                // Xử lý cột Trạng Thái (Hoạt động hoặc Không hoạt động)
-                string trangThai = row.Cells["TrangThai"].Value?.ToString();
-                if (trangThai == "Hoạt động")
-                {
-                    chkHoatDong.Checked = true;
-                    chkKhongHoatDong.Checked = false;
-                }
-                else if (trangThai == "Không hoạt động")
-                {
-                    chkKhongHoatDong.Checked = true;
-                    chkHoatDong.Checked = false;
-                }
-                else
-                {
-                    chkHoatDong.Checked = false;
-                    chkKhongHoatDong.Checked = false;
-                }
-            }
-        }
-
-        private void btnTimKiem_Click(object sender, EventArgs e)
+        private void btnTimKiem_Click_1(object sender, EventArgs e)
         {
             BUSNhanVien busNhanVien = new BUSNhanVien();
             string searchText = txtTimKiem.Text.Trim(); // Giả định có TextBox tên txtTimKiem
@@ -314,30 +332,6 @@ namespace GUI_PolyCafe
             {
                 MessageBox.Show("Không tìm thấy nhân viên nào!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
-        }
-
-        private void chkNhanVien_CheckedChanged(object sender, EventArgs e)
-        {
-            if (chkQuanLy.Checked)
-                chkNhanVien.Checked = false;
-        }
-
-        private void chkQuanLy_CheckedChanged(object sender, EventArgs e)
-        {
-            if (chkNhanVien.Checked)
-                chkQuanLy.Checked = false;
-        }
-
-        private void chkHoatDong_CheckedChanged(object sender, EventArgs e)
-        {
-            if (chkKhongHoatDong.Checked)
-                chkHoatDong.Checked = false;
-        }
-
-        private void chkKhongHoatDong_CheckedChanged(object sender, EventArgs e)
-        {
-            if (chkHoatDong.Checked)
-                chkKhongHoatDong.Checked = false;
         }
     }
 }

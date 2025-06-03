@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace DTO_PolyCafe
 {
     public class PhieuBanHang
-    {
+    {   
         public string MaPhieu { get; set; }
         public string MaThe { get; set; }
 

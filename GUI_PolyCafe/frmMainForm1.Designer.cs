@@ -31,34 +31,34 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMainForm1));
             this.panelSildeMenu = new System.Windows.Forms.Panel();
             this.panelDoanhThuMenuSub = new System.Windows.Forms.Panel();
-            this.panelHuongDanMenuSub = new System.Windows.Forms.Panel();
-            this.panelNhanVienSubMenu = new System.Windows.Forms.Panel();
-            this.panelBanHangSubMenu = new System.Windows.Forms.Panel();
-            this.panelDanhMucSubMenu = new System.Windows.Forms.Panel();
-            this.panelHeThongSubMenu = new System.Windows.Forms.Panel();
-            this.panelLogo = new System.Windows.Forms.Panel();
-            this.panelChildFrom = new System.Windows.Forms.Panel();
             this.btnTheoSanPham = new System.Windows.Forms.Button();
             this.btnTheoNhanVien = new System.Windows.Forms.Button();
             this.btnDoanhThu = new System.Windows.Forms.Button();
+            this.panelHuongDanMenuSub = new System.Windows.Forms.Panel();
             this.btnCachSuDung = new System.Windows.Forms.Button();
             this.btnGioiThieu = new System.Windows.Forms.Button();
             this.btnHuongDan = new System.Windows.Forms.Button();
+            this.panelNhanVienSubMenu = new System.Windows.Forms.Panel();
             this.btnQLNhanVien = new System.Windows.Forms.Button();
             this.btnNhanVien = new System.Windows.Forms.Button();
+            this.panelBanHangSubMenu = new System.Windows.Forms.Panel();
             this.btnPhieuBanHang = new System.Windows.Forms.Button();
             this.btnMenuBanHang = new System.Windows.Forms.Button();
             this.btnBanHang = new System.Windows.Forms.Button();
+            this.panelDanhMucSubMenu = new System.Windows.Forms.Panel();
             this.btnTheLuuDong = new System.Windows.Forms.Button();
             this.btnLoaiSanPham = new System.Windows.Forms.Button();
             this.btnSanPham = new System.Windows.Forms.Button();
             this.btnDanhMuc = new System.Windows.Forms.Button();
+            this.panelHeThongSubMenu = new System.Windows.Forms.Panel();
             this.btnThoat = new System.Windows.Forms.Button();
             this.btnDangXuat = new System.Windows.Forms.Button();
             this.btnDoiMatKhau = new System.Windows.Forms.Button();
             this.btnThongTin = new System.Windows.Forms.Button();
             this.btnHeThong = new System.Windows.Forms.Button();
+            this.panelLogo = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.panelChildFrom = new System.Windows.Forms.Panel();
             this.panelSildeMenu.SuspendLayout();
             this.panelDoanhThuMenuSub.SuspendLayout();
             this.panelHuongDanMenuSub.SuspendLayout();
@@ -106,92 +106,6 @@
             this.panelDoanhThuMenuSub.Name = "panelDoanhThuMenuSub";
             this.panelDoanhThuMenuSub.Size = new System.Drawing.Size(316, 99);
             this.panelDoanhThuMenuSub.TabIndex = 12;
-            // 
-            // panelHuongDanMenuSub
-            // 
-            this.panelHuongDanMenuSub.BackColor = System.Drawing.Color.Bisque;
-            this.panelHuongDanMenuSub.Controls.Add(this.btnCachSuDung);
-            this.panelHuongDanMenuSub.Controls.Add(this.btnGioiThieu);
-            this.panelHuongDanMenuSub.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelHuongDanMenuSub.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.panelHuongDanMenuSub.Location = new System.Drawing.Point(0, 855);
-            this.panelHuongDanMenuSub.Margin = new System.Windows.Forms.Padding(4);
-            this.panelHuongDanMenuSub.Name = "panelHuongDanMenuSub";
-            this.panelHuongDanMenuSub.Size = new System.Drawing.Size(316, 99);
-            this.panelHuongDanMenuSub.TabIndex = 10;
-            // 
-            // panelNhanVienSubMenu
-            // 
-            this.panelNhanVienSubMenu.BackColor = System.Drawing.Color.Bisque;
-            this.panelNhanVienSubMenu.Controls.Add(this.btnQLNhanVien);
-            this.panelNhanVienSubMenu.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelNhanVienSubMenu.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.panelNhanVienSubMenu.Location = new System.Drawing.Point(0, 759);
-            this.panelNhanVienSubMenu.Margin = new System.Windows.Forms.Padding(4);
-            this.panelNhanVienSubMenu.Name = "panelNhanVienSubMenu";
-            this.panelNhanVienSubMenu.Size = new System.Drawing.Size(316, 51);
-            this.panelNhanVienSubMenu.TabIndex = 8;
-            // 
-            // panelBanHangSubMenu
-            // 
-            this.panelBanHangSubMenu.BackColor = System.Drawing.Color.Bisque;
-            this.panelBanHangSubMenu.Controls.Add(this.btnPhieuBanHang);
-            this.panelBanHangSubMenu.Controls.Add(this.btnMenuBanHang);
-            this.panelBanHangSubMenu.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelBanHangSubMenu.Location = new System.Drawing.Point(0, 615);
-            this.panelBanHangSubMenu.Margin = new System.Windows.Forms.Padding(4);
-            this.panelBanHangSubMenu.Name = "panelBanHangSubMenu";
-            this.panelBanHangSubMenu.Size = new System.Drawing.Size(316, 99);
-            this.panelBanHangSubMenu.TabIndex = 6;
-            // 
-            // panelDanhMucSubMenu
-            // 
-            this.panelDanhMucSubMenu.BackColor = System.Drawing.Color.Bisque;
-            this.panelDanhMucSubMenu.Controls.Add(this.btnTheLuuDong);
-            this.panelDanhMucSubMenu.Controls.Add(this.btnLoaiSanPham);
-            this.panelDanhMucSubMenu.Controls.Add(this.btnSanPham);
-            this.panelDanhMucSubMenu.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelDanhMucSubMenu.Location = new System.Drawing.Point(0, 428);
-            this.panelDanhMucSubMenu.Margin = new System.Windows.Forms.Padding(4);
-            this.panelDanhMucSubMenu.Name = "panelDanhMucSubMenu";
-            this.panelDanhMucSubMenu.Size = new System.Drawing.Size(316, 142);
-            this.panelDanhMucSubMenu.TabIndex = 4;
-            // 
-            // panelHeThongSubMenu
-            // 
-            this.panelHeThongSubMenu.BackColor = System.Drawing.Color.Bisque;
-            this.panelHeThongSubMenu.Controls.Add(this.btnThoat);
-            this.panelHeThongSubMenu.Controls.Add(this.btnDangXuat);
-            this.panelHeThongSubMenu.Controls.Add(this.btnDoiMatKhau);
-            this.panelHeThongSubMenu.Controls.Add(this.btnThongTin);
-            this.panelHeThongSubMenu.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelHeThongSubMenu.Location = new System.Drawing.Point(0, 195);
-            this.panelHeThongSubMenu.Margin = new System.Windows.Forms.Padding(4);
-            this.panelHeThongSubMenu.Name = "panelHeThongSubMenu";
-            this.panelHeThongSubMenu.Size = new System.Drawing.Size(316, 188);
-            this.panelHeThongSubMenu.TabIndex = 2;
-            // 
-            // panelLogo
-            // 
-            this.panelLogo.BackColor = System.Drawing.Color.Peru;
-            this.panelLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panelLogo.Controls.Add(this.pictureBox1);
-            this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelLogo.Location = new System.Drawing.Point(0, 0);
-            this.panelLogo.Margin = new System.Windows.Forms.Padding(4);
-            this.panelLogo.Name = "panelLogo";
-            this.panelLogo.Size = new System.Drawing.Size(316, 150);
-            this.panelLogo.TabIndex = 0;
-            // 
-            // panelChildFrom
-            // 
-            this.panelChildFrom.BackgroundImage = global::GUI_PolyCafe.Properties.Resources.MainFix_PoLy;
-            this.panelChildFrom.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panelChildFrom.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelChildFrom.Location = new System.Drawing.Point(333, 0);
-            this.panelChildFrom.Name = "panelChildFrom";
-            this.panelChildFrom.Size = new System.Drawing.Size(1283, 1061);
-            this.panelChildFrom.TabIndex = 2;
             // 
             // btnTheoSanPham
             // 
@@ -253,6 +167,19 @@
             this.btnDoanhThu.UseVisualStyleBackColor = false;
             this.btnDoanhThu.Click += new System.EventHandler(this.btnDoanhThu_Click);
             // 
+            // panelHuongDanMenuSub
+            // 
+            this.panelHuongDanMenuSub.BackColor = System.Drawing.Color.Bisque;
+            this.panelHuongDanMenuSub.Controls.Add(this.btnCachSuDung);
+            this.panelHuongDanMenuSub.Controls.Add(this.btnGioiThieu);
+            this.panelHuongDanMenuSub.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelHuongDanMenuSub.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.panelHuongDanMenuSub.Location = new System.Drawing.Point(0, 855);
+            this.panelHuongDanMenuSub.Margin = new System.Windows.Forms.Padding(4);
+            this.panelHuongDanMenuSub.Name = "panelHuongDanMenuSub";
+            this.panelHuongDanMenuSub.Size = new System.Drawing.Size(316, 99);
+            this.panelHuongDanMenuSub.TabIndex = 10;
+            // 
             // btnCachSuDung
             // 
             this.btnCachSuDung.BackColor = System.Drawing.Color.Bisque;
@@ -313,6 +240,18 @@
             this.btnHuongDan.UseVisualStyleBackColor = false;
             this.btnHuongDan.Click += new System.EventHandler(this.btnHuongDan_Click);
             // 
+            // panelNhanVienSubMenu
+            // 
+            this.panelNhanVienSubMenu.BackColor = System.Drawing.Color.Bisque;
+            this.panelNhanVienSubMenu.Controls.Add(this.btnQLNhanVien);
+            this.panelNhanVienSubMenu.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelNhanVienSubMenu.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.panelNhanVienSubMenu.Location = new System.Drawing.Point(0, 759);
+            this.panelNhanVienSubMenu.Margin = new System.Windows.Forms.Padding(4);
+            this.panelNhanVienSubMenu.Name = "panelNhanVienSubMenu";
+            this.panelNhanVienSubMenu.Size = new System.Drawing.Size(316, 51);
+            this.panelNhanVienSubMenu.TabIndex = 8;
+            // 
             // btnQLNhanVien
             // 
             this.btnQLNhanVien.BackColor = System.Drawing.Color.Bisque;
@@ -352,6 +291,18 @@
             this.btnNhanVien.Text = "Nhân Viên";
             this.btnNhanVien.UseVisualStyleBackColor = false;
             this.btnNhanVien.Click += new System.EventHandler(this.btnNhanVien_Click);
+            // 
+            // panelBanHangSubMenu
+            // 
+            this.panelBanHangSubMenu.BackColor = System.Drawing.Color.Bisque;
+            this.panelBanHangSubMenu.Controls.Add(this.btnPhieuBanHang);
+            this.panelBanHangSubMenu.Controls.Add(this.btnMenuBanHang);
+            this.panelBanHangSubMenu.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelBanHangSubMenu.Location = new System.Drawing.Point(0, 615);
+            this.panelBanHangSubMenu.Margin = new System.Windows.Forms.Padding(4);
+            this.panelBanHangSubMenu.Name = "panelBanHangSubMenu";
+            this.panelBanHangSubMenu.Size = new System.Drawing.Size(316, 99);
+            this.panelBanHangSubMenu.TabIndex = 6;
             // 
             // btnPhieuBanHang
             // 
@@ -412,6 +363,19 @@
             this.btnBanHang.Text = "Bán Hàng";
             this.btnBanHang.UseVisualStyleBackColor = false;
             this.btnBanHang.Click += new System.EventHandler(this.btnBanHang_Click);
+            // 
+            // panelDanhMucSubMenu
+            // 
+            this.panelDanhMucSubMenu.BackColor = System.Drawing.Color.Bisque;
+            this.panelDanhMucSubMenu.Controls.Add(this.btnTheLuuDong);
+            this.panelDanhMucSubMenu.Controls.Add(this.btnLoaiSanPham);
+            this.panelDanhMucSubMenu.Controls.Add(this.btnSanPham);
+            this.panelDanhMucSubMenu.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelDanhMucSubMenu.Location = new System.Drawing.Point(0, 428);
+            this.panelDanhMucSubMenu.Margin = new System.Windows.Forms.Padding(4);
+            this.panelDanhMucSubMenu.Name = "panelDanhMucSubMenu";
+            this.panelDanhMucSubMenu.Size = new System.Drawing.Size(316, 142);
+            this.panelDanhMucSubMenu.TabIndex = 4;
             // 
             // btnTheLuuDong
             // 
@@ -492,6 +456,20 @@
             this.btnDanhMuc.Text = "Danh Mục";
             this.btnDanhMuc.UseVisualStyleBackColor = false;
             this.btnDanhMuc.Click += new System.EventHandler(this.btnDanhMuc_Click);
+            // 
+            // panelHeThongSubMenu
+            // 
+            this.panelHeThongSubMenu.BackColor = System.Drawing.Color.Bisque;
+            this.panelHeThongSubMenu.Controls.Add(this.btnThoat);
+            this.panelHeThongSubMenu.Controls.Add(this.btnDangXuat);
+            this.panelHeThongSubMenu.Controls.Add(this.btnDoiMatKhau);
+            this.panelHeThongSubMenu.Controls.Add(this.btnThongTin);
+            this.panelHeThongSubMenu.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelHeThongSubMenu.Location = new System.Drawing.Point(0, 195);
+            this.panelHeThongSubMenu.Margin = new System.Windows.Forms.Padding(4);
+            this.panelHeThongSubMenu.Name = "panelHeThongSubMenu";
+            this.panelHeThongSubMenu.Size = new System.Drawing.Size(316, 188);
+            this.panelHeThongSubMenu.TabIndex = 2;
             // 
             // btnThoat
             // 
@@ -593,28 +571,53 @@
             this.btnHeThong.UseVisualStyleBackColor = false;
             this.btnHeThong.Click += new System.EventHandler(this.btnHeThong_Click);
             // 
+            // panelLogo
+            // 
+            this.panelLogo.BackColor = System.Drawing.Color.Peru;
+            this.panelLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panelLogo.Controls.Add(this.pictureBox1);
+            this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelLogo.Location = new System.Drawing.Point(0, 0);
+            this.panelLogo.Margin = new System.Windows.Forms.Padding(4);
+            this.panelLogo.Name = "panelLogo";
+            this.panelLogo.Size = new System.Drawing.Size(316, 150);
+            this.panelLogo.TabIndex = 0;
+            // 
             // pictureBox1
             // 
             this.pictureBox1.BackgroundImage = global::GUI_PolyCafe.Properties.Resources.image_removebg_preview;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.Location = new System.Drawing.Point(82, 27);
+            this.pictureBox1.Location = new System.Drawing.Point(82, 16);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(154, 116);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
+            // panelChildFrom
+            // 
+            this.panelChildFrom.BackgroundImage = global::GUI_PolyCafe.Properties.Resources.MainFix_PoLy;
+            this.panelChildFrom.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panelChildFrom.Location = new System.Drawing.Point(333, 0);
+            this.panelChildFrom.Name = "panelChildFrom";
+            this.panelChildFrom.Size = new System.Drawing.Size(1591, 1061);
+            this.panelChildFrom.TabIndex = 2;
+            this.panelChildFrom.Paint += new System.Windows.Forms.PaintEventHandler(this.panelChildFrom_Paint);
+            // 
             // frmMainForm1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1616, 1061);
+            this.ClientSize = new System.Drawing.Size(1924, 1061);
             this.Controls.Add(this.panelChildFrom);
             this.Controls.Add(this.panelSildeMenu);
             this.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
+            this.MaximumSize = new System.Drawing.Size(1940, 1100);
+            this.MinimumSize = new System.Drawing.Size(1918, 1038);
             this.Name = "frmMainForm1";
             this.Text = "Trang chủ";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmMainForm1_FormClosing);
             this.panelSildeMenu.ResumeLayout(false);
             this.panelDoanhThuMenuSub.ResumeLayout(false);
             this.panelHuongDanMenuSub.ResumeLayout(false);

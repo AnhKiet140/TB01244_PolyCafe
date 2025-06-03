@@ -20,13 +20,13 @@ namespace DAL_PolyCafe
                 while (reader.Read())
                 {
                     SanPham entity = new SanPham();
-                    entity.MaSanPham = reader.GetString(0);
-                    entity.TenSanPham = reader.GetString(1);
-                    entity.DonGia = reader.GetDecimal(2);
-                    entity.MaLoai = reader.GetString(3);
-                    entity.TenLoai = reader.GetString(4);
-                    entity.HinhAnh = reader.GetString(5);
-                    entity.TrangThai = reader.GetBoolean(6);
+                    entity.MaSanPham = reader["MaSanPham"].ToString();
+                    entity.TenSanPham = reader["TenSanPham"].ToString();
+                    entity.DonGia = reader.GetDecimal(reader.GetOrdinal("DonGia"));
+                    entity.MaLoai = reader["MaLoai"].ToString();
+                    entity.TenLoai = reader["TenLoai"].ToString(); // nếu có
+                    entity.HinhAnh = reader["HinhAnh"].ToString();
+                    entity.TrangThai = reader.GetBoolean(reader.GetOrdinal("TrangThai"));
                     list.Add(entity);
                 }
             }

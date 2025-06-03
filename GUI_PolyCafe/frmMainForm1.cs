@@ -78,9 +78,17 @@ namespace GUI_PolyCafe
 
         private void button3_Click(object sender, EventArgs e)
         {
-            //..
-            // Your code
-            //..
+            DialogResult result = MessageBox.Show(
+             "Bạn có chắc chắn muốn đăng xuất không?",
+             "Xác nhận đăng xuất",
+             MessageBoxButtons.YesNo,
+             MessageBoxIcon.Question);
+
+            if (result == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
+            hideSubMenu();
             hideSubMenu();
         }
 
@@ -190,21 +198,22 @@ namespace GUI_PolyCafe
             hideSubMenu();
         }
 
-        private Form activeForm = null;
-        private void openChildForm(Form childForm)
+        private Form currentFormChild;
+
+        private void openChildForm(Form formChild)
         {
-            if (activeForm != null)
+            if (currentFormChild != null)
             {
-                activeForm.Close();
+                currentFormChild.Close();
             }
-            activeForm = childForm;
-            childForm.TopLevel = false;
-            childForm.FormBorderStyle = FormBorderStyle.None;
-            childForm.Dock = DockStyle.Fill;
-            panelChildFrom.Controls.Add(childForm);
-            panelChildFrom.Tag = childForm;
-            childForm.BringToFront();
-            childForm.Show();
+            currentFormChild = formChild;
+            formChild.TopLevel = false;
+            formChild.FormBorderStyle = FormBorderStyle.None;
+            formChild.Dock = DockStyle.Fill;
+            panelChildFrom.Controls.Add(formChild);
+            panelChildFrom.Tag = formChild;
+            formChild.BringToFront();
+            formChild.Show();
         }
 
         private void CheckPermission()
@@ -239,6 +248,19 @@ namespace GUI_PolyCafe
             btnDanhMuc.Visible = false;
             btnNhanVien.Visible = false;
             btnDoanhThu.Visible = false;
+        }
+
+        private void frmMainForm1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (e.CloseReason == CloseReason.UserClosing)
+            {
+                e.Cancel = true;
+            }
+        }
+
+        private void panelChildFrom_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

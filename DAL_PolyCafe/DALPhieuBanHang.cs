@@ -95,22 +95,14 @@ namespace DAL_PolyCafe
                 while (reader.Read())
                 {
                     PhieuBanHang entity = new PhieuBanHang();
-                    //entity.MaPhieu = reader.GetString("MaPhieu");
-                    //entity.MaThe = reader.GetString("MaThe");
-                    //entity.ChuSoHuu = reader.GetString("ChuSoHuu");
-                    //entity.MaNhanVien = reader.GetString("MaNhanVien");
-                    //entity.HoTen = reader.GetString("HoTen");
-                    //entity.NgayTao = reader.GetDateTime("NgayTao");
-                    //entity.TrangThai = reader.GetBoolean("TrangThai");
-                    list.Add(entity);
-
                     entity.MaPhieu = reader.GetString(0);
                     entity.MaThe = reader.GetString(1);
                     entity.ChuSoHuu = reader.GetString(2);
                     entity.MaNhanVien = reader.GetString(3);
                     entity.HoTen = reader.GetString(4);
-                    entity.NgayTao =reader.GetDateTime(5);
+                    entity.NgayTao = reader.GetDateTime(5);
                     entity.TrangThai = reader.GetBoolean(6);
+                    list.Add(entity);
                 }
             }
             catch (Exception)

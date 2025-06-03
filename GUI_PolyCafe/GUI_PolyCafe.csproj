@@ -58,6 +58,12 @@
     <Compile Include="frmCachSuDung.Designer.cs">
       <DependentUpon>frmCachSuDung.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmChiTietPhieu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmChiTietPhieu.Designer.cs">
+      <DependentUpon>frmChiTietPhieu.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmDoiMatKhau.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -142,8 +148,12 @@
     <Compile Include="frmWelcome.Designer.cs">
       <DependentUpon>frmWelcome.cs</DependentUpon>
     </Compile>
+    <Compile Include="Helper\ImageUtil.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmChiTietPhieu.resx">
+      <DependentUpon>frmChiTietPhieu.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmDoiMatKhau.resx">
       <DependentUpon>frmDoiMatKhau.cs</DependentUpon>
     </EmbeddedResource>
@@ -370,6 +380,60 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\financial-statement.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\positive.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\positive %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wrench1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refresh-data.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\erase1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gallery.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\statistics.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refresh-data1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Thêm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\làm mới.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sửa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Xoá.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Thêm 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sửa 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\xoá 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\xoá 21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Làm mới 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\th.jfif" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

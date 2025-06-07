@@ -184,17 +184,13 @@ namespace GUI_PolyCafe
 
         private void btnTheoNhanVien_Click(object sender, EventArgs e)
         {
-            //..
-            // Your code
-            //..
+            openChildForm(new frmThongKeNhanVien());
             hideSubMenu();
         }
 
         private void btnTheoSanPham_Click(object sender, EventArgs e)
         {
-            //..
-            // Your code
-            //..
+            openChildForm(new frmThongKeLoaiSP());
             hideSubMenu();
         }
 

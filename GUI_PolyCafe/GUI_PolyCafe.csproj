@@ -130,11 +130,17 @@
     <Compile Include="frmQuanLyTheLuuDong.Designer.cs">
       <DependentUpon>frmQuanLyTheLuuDong.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmQuanLyThongKe.cs">
+    <Compile Include="frmThongKeLoaiSP.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmQuanLyThongKe.Designer.cs">
-      <DependentUpon>frmQuanLyThongKe.cs</DependentUpon>
+    <Compile Include="frmThongKeLoaiSP.Designer.cs">
+      <DependentUpon>frmThongKeLoaiSP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmThongKeNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmThongKeNhanVien.Designer.cs">
+      <DependentUpon>frmThongKeNhanVien.cs</DependentUpon>
     </Compile>
     <Compile Include="frmQuanLyVatDung.cs">
       <SubType>Form</SubType>
@@ -187,8 +193,11 @@
     <EmbeddedResource Include="frmQuanLyTheLuuDong.resx">
       <DependentUpon>frmQuanLyTheLuuDong.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmQuanLyThongKe.resx">
-      <DependentUpon>frmQuanLyThongKe.cs</DependentUpon>
+    <EmbeddedResource Include="frmThongKeLoaiSP.resx">
+      <DependentUpon>frmThongKeLoaiSP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmThongKeNhanVien.resx">
+      <DependentUpon>frmThongKeNhanVien.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmQuanLyVatDung.resx">
       <DependentUpon>frmQuanLyVatDung.cs</DependentUpon>
@@ -434,6 +443,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\th.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bar-chart.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

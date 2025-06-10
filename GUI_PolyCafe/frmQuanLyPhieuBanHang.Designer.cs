@@ -66,11 +66,11 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Mongolian Baiti", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 30F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.label1.Location = new System.Drawing.Point(380, 9);
+            this.label1.Location = new System.Drawing.Point(377, 19);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(457, 43);
+            this.label1.Size = new System.Drawing.Size(488, 54);
             this.label1.TabIndex = 2;
             this.label1.Text = "Quản Lý Phiếu Bán Hàng";
             // 
@@ -171,11 +171,11 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft YaHei UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
+            this.label5.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.label5.ForeColor = System.Drawing.SystemColors.Highlight;
             this.label5.Location = new System.Drawing.Point(32, 207);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(77, 19);
+            this.label5.Size = new System.Drawing.Size(74, 19);
             this.label5.TabIndex = 12;
             this.label5.Text = "Ngày Tạo";
             // 
@@ -190,33 +190,33 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft YaHei UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.label4.ForeColor = System.Drawing.SystemColors.Highlight;
             this.label4.Location = new System.Drawing.Point(32, 154);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(82, 19);
+            this.label4.Size = new System.Drawing.Size(77, 19);
             this.label4.TabIndex = 7;
             this.label4.Text = "Nhân Viên";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft YaHei UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.label3.ForeColor = System.Drawing.SystemColors.Highlight;
             this.label3.Location = new System.Drawing.Point(32, 95);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(75, 19);
+            this.label3.Size = new System.Drawing.Size(71, 19);
             this.label3.TabIndex = 4;
             this.label3.Text = "Mã Phiếu";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft YaHei UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.label2.ForeColor = System.Drawing.SystemColors.Highlight;
             this.label2.Location = new System.Drawing.Point(32, 41);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(62, 19);
+            this.label2.Size = new System.Drawing.Size(58, 19);
             this.label2.TabIndex = 3;
             this.label2.Text = "Mã Thẻ";
             // 
@@ -238,10 +238,11 @@
             // rdbDaThanhToan
             // 
             this.rdbDaThanhToan.AutoSize = true;
+            this.rdbDaThanhToan.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.rdbDaThanhToan.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.rdbDaThanhToan.Location = new System.Drawing.Point(300, 33);
             this.rdbDaThanhToan.Name = "rdbDaThanhToan";
-            this.rdbDaThanhToan.Size = new System.Drawing.Size(123, 19);
+            this.rdbDaThanhToan.Size = new System.Drawing.Size(125, 23);
             this.rdbDaThanhToan.TabIndex = 1;
             this.rdbDaThanhToan.TabStop = true;
             this.rdbDaThanhToan.Text = "Đã Thanh Toán";
@@ -250,10 +251,11 @@
             // rdbChoThanhToan
             // 
             this.rdbChoThanhToan.AutoSize = true;
+            this.rdbChoThanhToan.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.rdbChoThanhToan.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.rdbChoThanhToan.Location = new System.Drawing.Point(80, 33);
             this.rdbChoThanhToan.Name = "rdbChoThanhToan";
-            this.rdbChoThanhToan.Size = new System.Drawing.Size(130, 19);
+            this.rdbChoThanhToan.Size = new System.Drawing.Size(133, 23);
             this.rdbChoThanhToan.TabIndex = 0;
             this.rdbChoThanhToan.TabStop = true;
             this.rdbChoThanhToan.Text = "Chờ Thanh Toán";
@@ -362,6 +364,7 @@
             // 
             this.btnTimKiem.BackColor = System.Drawing.SystemColors.Window;
             this.btnTimKiem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnTimKiem.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.btnTimKiem.ForeColor = System.Drawing.SystemColors.Highlight;
             this.btnTimKiem.Image = global::GUI_PolyCafe.Properties.Resources.searching;
             this.btnTimKiem.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;

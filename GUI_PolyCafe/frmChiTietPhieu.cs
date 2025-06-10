@@ -249,5 +249,10 @@ namespace GUI_PolyCafe
             txtThanhTien.Text = "0";
             txtDichVu.Text = "0";
         }
+
+        private void dgrSanPham_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+             
+        }
     }
 }

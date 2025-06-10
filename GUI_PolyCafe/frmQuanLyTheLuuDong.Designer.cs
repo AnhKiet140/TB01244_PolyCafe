@@ -62,11 +62,11 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Mongolian Baiti", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 30F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.label1.Location = new System.Drawing.Point(12, 18);
+            this.label1.Location = new System.Drawing.Point(360, 26);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(421, 43);
+            this.label1.Size = new System.Drawing.Size(451, 54);
             this.label1.TabIndex = 2;
             this.label1.Text = "Quản Lý Thẻ Lưu Động";
             // 
@@ -90,22 +90,22 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft YaHei UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.label3.ForeColor = System.Drawing.SystemColors.Highlight;
             this.label3.Location = new System.Drawing.Point(24, 92);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(91, 19);
+            this.label3.Size = new System.Drawing.Size(87, 19);
             this.label3.TabIndex = 4;
             this.label3.Text = "Chủ Sở Hữu";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft YaHei UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.label2.ForeColor = System.Drawing.SystemColors.Highlight;
             this.label2.Location = new System.Drawing.Point(24, 42);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(62, 19);
+            this.label2.Size = new System.Drawing.Size(58, 19);
             this.label2.TabIndex = 3;
             this.label2.Text = "Mã Thẻ";
             // 
@@ -173,11 +173,11 @@
             // chkKhongHoatDong
             // 
             this.chkKhongHoatDong.AutoSize = true;
-            this.chkKhongHoatDong.Font = new System.Drawing.Font("Microsoft YaHei UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
+            this.chkKhongHoatDong.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.chkKhongHoatDong.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.chkKhongHoatDong.Location = new System.Drawing.Point(277, 32);
             this.chkKhongHoatDong.Name = "chkKhongHoatDong";
-            this.chkKhongHoatDong.Size = new System.Drawing.Size(154, 23);
+            this.chkKhongHoatDong.Size = new System.Drawing.Size(147, 23);
             this.chkKhongHoatDong.TabIndex = 2;
             this.chkKhongHoatDong.Text = "Không Hoạt động";
             this.chkKhongHoatDong.UseVisualStyleBackColor = true;
@@ -186,11 +186,11 @@
             // chkHoatDong
             // 
             this.chkHoatDong.AutoSize = true;
-            this.chkHoatDong.Font = new System.Drawing.Font("Microsoft YaHei UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
+            this.chkHoatDong.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.chkHoatDong.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.chkHoatDong.Location = new System.Drawing.Point(97, 32);
             this.chkHoatDong.Name = "chkHoatDong";
-            this.chkHoatDong.Size = new System.Drawing.Size(104, 23);
+            this.chkHoatDong.Size = new System.Drawing.Size(100, 23);
             this.chkHoatDong.TabIndex = 1;
             this.chkHoatDong.Text = "Hoạt động";
             this.chkHoatDong.UseVisualStyleBackColor = true;
@@ -214,6 +214,7 @@
             // 
             this.btnTimKiem.BackColor = System.Drawing.SystemColors.Window;
             this.btnTimKiem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnTimKiem.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.btnTimKiem.ForeColor = System.Drawing.SystemColors.Highlight;
             this.btnTimKiem.Image = global::GUI_PolyCafe.Properties.Resources.searching;
             this.btnTimKiem.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;

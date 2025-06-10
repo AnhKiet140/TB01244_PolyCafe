@@ -39,9 +39,9 @@ namespace DAL_PolyCafe
                     entity.MaChiTiet = reader.GetString(0);
                     entity.MaPhieu = reader.GetString(1);
                     entity.MaSanPham = reader.GetString(2);
-                    entity.TenSanPham = reader.GetString(3);
-                    entity.SoLuong = reader.GetInt32(4);
-                    entity.DonGia = reader.GetDecimal(5);
+                    entity.SoLuong = reader.GetInt32(3);
+                    entity.DonGia = reader.GetDecimal(4);
+                    entity.TenSanPham = reader.GetString(5);
                     list.Add(entity);
                 }
             }

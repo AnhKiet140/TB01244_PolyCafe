@@ -433,6 +433,16 @@ namespace GUI_PolyCafe.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap POLY_GioiThieu {
+            get {
+                object obj = ResourceManager.GetObject("POLY_GioiThieu", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap POLY_Login {
             get {
                 object obj = ResourceManager.GetObject("POLY_Login", resourceCulture);

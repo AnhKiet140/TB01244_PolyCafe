@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace GUI_PolyCafe
 {
-    public partial class frmQuanLyTaiKhoan : Form
+    public partial class frmHuongDanSuDung_3 : Form
     {
-        public frmQuanLyTaiKhoan()
+        public frmHuongDanSuDung_3()
         {
             InitializeComponent();
         }

@@ -76,6 +76,24 @@
     <Compile Include="frmGioiThieu.Designer.cs">
       <DependentUpon>frmGioiThieu.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmHuongDanSuDung-2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHuongDanSuDung-2.Designer.cs">
+      <DependentUpon>frmHuongDanSuDung-2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmHuongDanSuDung-3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHuongDanSuDung-3.Designer.cs">
+      <DependentUpon>frmHuongDanSuDung-3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmHuongDanSuDung.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHuongDanSuDung.Designer.cs">
+      <DependentUpon>frmHuongDanSuDung.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -87,12 +105,6 @@
     </Compile>
     <Compile Include="frmMainForm1.Designer.cs">
       <DependentUpon>frmMainForm1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmQuanLyKhuyenMai.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmQuanLyKhuyenMai.Designer.cs">
-      <DependentUpon>frmQuanLyKhuyenMai.cs</DependentUpon>
     </Compile>
     <Compile Include="frmQuanLyLoaiSanPham.cs">
       <SubType>Form</SubType>
@@ -118,12 +130,6 @@
     <Compile Include="frmQuanLySanPham.Designer.cs">
       <DependentUpon>frmQuanLySanPham.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmQuanLyTaiKhoan.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmQuanLyTaiKhoan.Designer.cs">
-      <DependentUpon>frmQuanLyTaiKhoan.cs</DependentUpon>
-    </Compile>
     <Compile Include="frmQuanLyTheLuuDong.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -142,11 +148,11 @@
     <Compile Include="frmThongKeNhanVien.Designer.cs">
       <DependentUpon>frmThongKeNhanVien.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmQuanLyVatDung.cs">
+    <Compile Include="frmThongTinTaiKhoan.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmQuanLyVatDung.Designer.cs">
-      <DependentUpon>frmQuanLyVatDung.cs</DependentUpon>
+    <Compile Include="frmThongTinTaiKhoan.Designer.cs">
+      <DependentUpon>frmThongTinTaiKhoan.cs</DependentUpon>
     </Compile>
     <Compile Include="frmWelcome.cs">
       <SubType>Form</SubType>
@@ -155,8 +161,12 @@
       <DependentUpon>frmWelcome.cs</DependentUpon>
     </Compile>
     <Compile Include="Helper\ImageUtil.cs" />
+    <Compile Include="Helper\Session.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmCachSuDung.resx">
+      <DependentUpon>frmCachSuDung.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmChiTietPhieu.resx">
       <DependentUpon>frmChiTietPhieu.cs</DependentUpon>
     </EmbeddedResource>
@@ -166,14 +176,20 @@
     <EmbeddedResource Include="frmGioiThieu.resx">
       <DependentUpon>frmGioiThieu.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmHuongDanSuDung-2.resx">
+      <DependentUpon>frmHuongDanSuDung-2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHuongDanSuDung-3.resx">
+      <DependentUpon>frmHuongDanSuDung-3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHuongDanSuDung.resx">
+      <DependentUpon>frmHuongDanSuDung.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmMainForm1.resx">
       <DependentUpon>frmMainForm1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmQuanLyKhuyenMai.resx">
-      <DependentUpon>frmQuanLyKhuyenMai.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmQuanLyLoaiSanPham.resx">
       <DependentUpon>frmQuanLyLoaiSanPham.cs</DependentUpon>
@@ -187,9 +203,6 @@
     <EmbeddedResource Include="frmQuanLySanPham.resx">
       <DependentUpon>frmQuanLySanPham.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmQuanLyTaiKhoan.resx">
-      <DependentUpon>frmQuanLyTaiKhoan.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="frmQuanLyTheLuuDong.resx">
       <DependentUpon>frmQuanLyTheLuuDong.cs</DependentUpon>
     </EmbeddedResource>
@@ -199,8 +212,8 @@
     <EmbeddedResource Include="frmThongKeNhanVien.resx">
       <DependentUpon>frmThongKeNhanVien.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmQuanLyVatDung.resx">
-      <DependentUpon>frmQuanLyVatDung.cs</DependentUpon>
+    <EmbeddedResource Include="frmThongTinTaiKhoan.resx">
+      <DependentUpon>frmThongTinTaiKhoan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmWelcome.resx">
       <DependentUpon>frmWelcome.cs</DependentUpon>
@@ -449,6 +462,30 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\POLY_GioiThieu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\POLY_GioiThieu1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\POLY %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CÁCH SỬ DỤNG 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CÁCH SỬ DỤNG 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CÁCH SỬ DỤNG 3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\banker-flat-icon-png_238399.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\banker-flat-icon-png_2383991.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\question-mark1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

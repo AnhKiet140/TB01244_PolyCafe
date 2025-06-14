@@ -45,6 +45,7 @@
             // 
             // dgrDanhSachThongKe
             // 
+            this.dgrDanhSachThongKe.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgrDanhSachThongKe.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgrDanhSachThongKe.Location = new System.Drawing.Point(14, 129);
             this.dgrDanhSachThongKe.Name = "dgrDanhSachThongKe";
@@ -171,6 +172,8 @@
             this.Controls.Add(this.groupBox2);
             this.DoubleBuffered = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximumSize = new System.Drawing.Size(1205, 782);
+            this.MinimumSize = new System.Drawing.Size(1205, 782);
             this.Name = "frmThongKeNhanVien";
             this.Text = "Quản Lý Thống Kê";
             this.Load += new System.EventHandler(this.frmThongKeNhanVien_Load);

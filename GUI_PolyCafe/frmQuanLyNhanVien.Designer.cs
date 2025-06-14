@@ -420,6 +420,8 @@
             this.Controls.Add(this.groupBox3);
             this.DoubleBuffered = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximumSize = new System.Drawing.Size(1204, 749);
+            this.MinimumSize = new System.Drawing.Size(1204, 749);
             this.Name = "frmQuanLyNhanVien";
             this.Text = "Quản Lý Nhân Viên";
             this.Load += new System.EventHandler(this.frmQuanLyNhanVien_Load);

@@ -329,6 +329,8 @@
             this.Controls.Add(this.groupBox4);
             this.DoubleBuffered = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximumSize = new System.Drawing.Size(1205, 766);
+            this.MinimumSize = new System.Drawing.Size(1205, 766);
             this.Name = "frmQuanLyLoaiSanPham";
             this.Text = "Quản Lý Loại Sản Phẩm";
             this.Load += new System.EventHandler(this.frmQuanLyLoaiSanPham_Load);

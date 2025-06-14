@@ -4,12 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using DTO_PolyCafe;
+using static System.Collections.Specialized.BitVector32;
 
 namespace UTIL_PolyCafe
 {
     public class AuthUtil
     {
         public static NhanVien user = null;
+
         public static bool IsLogin()
         {
             if (user == null)

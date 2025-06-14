@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using BLL_PolyCafe;
 using DTO_PolyCafe;
+using GUI_PolyCafe.Helper;
 using UTIL_PolyCafe;
 
 namespace GUI_PolyCafe
@@ -83,6 +84,8 @@ namespace GUI_PolyCafe
                     return;
                 }
                 AuthUtil.user = nv;
+                // Bổ sung: Gán mã nhân viên vào Session để đồng bộ với AuthUtil
+                Session.MaNhanVien = nv.MaNhanVien; // Giả sử NhanVien có thuộc tính MaNhanVien
 
                 frmMainForm1 main = new frmMainForm1();
                 main.Show();

@@ -34,11 +34,12 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::GUI_PolyCafe.Properties.Resources.POLY_GioiThieu;
+            this.BackgroundImage = global::GUI_PolyCafe.Properties.Resources.POLY__1_;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1188, 710);
-            this.MaximumSize = new System.Drawing.Size(1204, 749);
-            this.MinimumSize = new System.Drawing.Size(1204, 749);
+            this.ClientSize = new System.Drawing.Size(1261, 766);
+            this.DoubleBuffered = true;
+            this.MaximumSize = new System.Drawing.Size(1277, 805);
+            this.MinimumSize = new System.Drawing.Size(1277, 805);
             this.Name = "frmGioiThieu";
             this.Text = "frmGioiThieu";
             this.ResumeLayout(false);

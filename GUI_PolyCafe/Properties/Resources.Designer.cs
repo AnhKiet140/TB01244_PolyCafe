@@ -133,6 +133,26 @@ namespace GUI_PolyCafe.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap banker_flat_icon_png_238399 {
+            get {
+                object obj = ResourceManager.GetObject("banker-flat-icon-png_238399", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap banker_flat_icon_png_2383991 {
+            get {
+                object obj = ResourceManager.GetObject("banker-flat-icon-png_2383991", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap bar_chart {
             get {
                 object obj = ResourceManager.GetObject("bar-chart", resourceCulture);
@@ -156,6 +176,36 @@ namespace GUI_PolyCafe.Properties {
         internal static System.Drawing.Bitmap black_ham {
             get {
                 object obj = ResourceManager.GetObject("black_ham", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap CÁCH_SỬ_DỤNG_1 {
+            get {
+                object obj = ResourceManager.GetObject("CÁCH SỬ DỤNG 1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap CÁCH_SỬ_DỤNG_2 {
+            get {
+                object obj = ResourceManager.GetObject("CÁCH SỬ DỤNG 2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap CÁCH_SỬ_DỤNG_3 {
+            get {
+                object obj = ResourceManager.GetObject("CÁCH SỬ DỤNG 3", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -423,6 +473,16 @@ namespace GUI_PolyCafe.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap POLY__1_ {
+            get {
+                object obj = ResourceManager.GetObject("POLY (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap POLY_BACKK {
             get {
                 object obj = ResourceManager.GetObject("POLY_BACKK", resourceCulture);
@@ -436,6 +496,16 @@ namespace GUI_PolyCafe.Properties {
         internal static System.Drawing.Bitmap POLY_GioiThieu {
             get {
                 object obj = ResourceManager.GetObject("POLY_GioiThieu", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap POLY_GioiThieu1 {
+            get {
+                object obj = ResourceManager.GetObject("POLY_GioiThieu1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -506,6 +576,16 @@ namespace GUI_PolyCafe.Properties {
         internal static System.Drawing.Bitmap question_mark {
             get {
                 object obj = ResourceManager.GetObject("question-mark", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap question_mark1 {
+            get {
+                object obj = ResourceManager.GetObject("question-mark1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -287,10 +287,32 @@ namespace GUI_PolyCafe
 
         }
 
-        private void dgrDanhSachSP_SelectionChanged(object sender, EventArgs e)
-        {
+        //private void dgrDanhSachSP_SelectionChanged(object sender, EventArgs e)
+        //{
+        //    try
+        //    {
+        //        if (dgrDanhSachSP.SelectedRows.Count > 0)
+        //        {
+        //            DataGridViewRow row = dgrDanhSachSP.SelectedRows[0];
+        //            string maSanPham = row.Cells["MaSanPham"].Value?.ToString() ?? "N/A";
+        //            string tenSanPham = row.Cells["TenSanPham"].Value?.ToString() ?? "N/A";
+        //            string trangThai = row.Cells["trangThai"].Value?.ToString() ?? "N/A";
+        //            bool isHoatDong = trangThai == "Bán"; // Map "Bán" to true, "Ngưng bán" to false
 
-        }
+        //            MessageBox.Show($"Mã Sản Phẩm: {maSanPham}\nTên Sản Phẩm: {tenSanPham}\nTrạng Thái: {trangThai}", "Thông báo",
+        //                MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+        //            // Add the requested button enable/disable logic
+        //            btnThem.Enabled = false;
+        //            btnSua.Enabled = true;
+        //            btnXoa.Enabled = true;
+        //        }
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        MessageBox.Show(ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        //    }
+        //}
 
         private void pbHinhAnh_Click(object sender, EventArgs e)
         {
@@ -356,34 +378,6 @@ namespace GUI_PolyCafe
             {
                 MessageBox.Show("Lỗi: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-        }
-
-        private void dgrDanhSachSP_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
-        {
-            DataGridViewRow row = dgrDanhSachSP.Rows[e.RowIndex];
-            txtMaSanPham.Text = row.Cells["MaSanPham"].Value.ToString();
-            txtTenSanPham.Text = row.Cells["TenSanPham"].Value.ToString();
-            txtDonGia.Text = row.Cells["DonGia"].Value.ToString();
-            cboLoaiSanPham.SelectedValue = row.Cells["MaLoai"].Value.ToString();
-
-            string path = Path.Combine(Application.StartupPath,
-                row.Cells["HinhAnh"].Value.ToString());
-            pbHinhAnh.Image = ImageUtil.LoadImage(path);
-            pbHinhAnh.Tag = path;
-
-            bool trangThai = Convert.ToBoolean(row.Cells["TrangThai"].Value);
-            if (trangThai)
-            {
-                rdbHoatDong.Checked = true;
-            }
-            else
-            {
-                rdbNgungBan.Checked = true;
-            }
-            // Bật nút "Sửa"
-            btnThem.Enabled = false;
-            btnSua.Enabled = true;
-            btnXoa.Enabled = true;
         }
 
         private void btnSua_Click(object sender, EventArgs e)
@@ -502,6 +496,126 @@ namespace GUI_PolyCafe
             ClearForm();
             LoadLoaiSanPham();
             LoadDanhSachSanPham();
+        }
+
+        private void dgrDanhSachSP_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            DataGridViewRow row = dgrDanhSachSP.Rows[e.RowIndex];
+            txtMaSanPham.Text = row.Cells["MaSanPham"].Value.ToString();
+            txtTenSanPham.Text = row.Cells["TenSanPham"].Value.ToString();
+            txtDonGia.Text = row.Cells["DonGia"].Value.ToString();
+            cboLoaiSanPham.SelectedValue = row.Cells["MaLoai"].Value.ToString();
+
+            string path = Path.Combine(Application.StartupPath,
+                row.Cells["HinhAnh"].Value.ToString());
+            pbHinhAnh.Image = ImageUtil.LoadImage(path);
+            pbHinhAnh.Tag = path;
+
+            bool trangThai = Convert.ToBoolean(row.Cells["TrangThai"].Value);
+            if (trangThai)
+            {
+                rdbHoatDong.Checked = true;
+            }
+            else
+            {
+                rdbNgungBan.Checked = true;
+            }
+            // Bật nút "Sửa"
+            btnThem.Enabled = false;
+            btnSua.Enabled = true;
+            btnXoa.Enabled = true;
+        }
+
+        private void dgrDanhSachSP_SelectionChanged(object sender, EventArgs e)
+        {
+            if (dgrDanhSachSP.SelectedRows.Count > 0)
+            {
+                var row = dgrDanhSachSP.SelectedRows[0];
+
+                txtMaSanPham.Text = row.Cells["MaSanPham"].Value?.ToString();
+                txtTenSanPham.Text = row.Cells["TenSanPham"].Value?.ToString();
+                txtDonGia.Text = row.Cells["DonGia"].Value?.ToString();
+                cboLoaiSanPham.Text = row.Cells["MaLoai"].Value?.ToString();
+
+
+                string trangThai = row.Cells["TrangThai"].Value?.ToString();
+                if (trangThai == "Qu" || trangThai == "Quản Lý")
+                {
+                    rdbHoatDong.Checked = true;
+                    rdbNgungBan.Checked = false;
+                }
+                else if (trangThai == "Nh" || trangThai == "Nhân Viên")
+                {
+                    rdbHoatDong.Checked = true;
+                    rdbNgungBan.Checked = false;
+                }
+                else
+                {
+                    rdbHoatDong.Checked = false;
+                    rdbNgungBan.Checked = false;
+                }
+            }
+        }
+
+        private void btnTimKiem_Click_1(object sender, EventArgs e)
+        {
+            string searchText = txtTimKiem.Text.Trim();
+
+            if (string.IsNullOrEmpty(searchText))
+            {
+                MessageBox.Show("Vui lòng nhập từ khóa tìm kiếm!", "Thông báo",
+                    MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                LoadDanhSachSanPham(); // Reload full list if no search term
+                return;
+            }
+
+            BUSSanPham busSanPham = new BUSSanPham();
+            List<SanPham> danhSach = busSanPham.GetSanPhamList();
+
+            if (danhSach == null || danhSach.Count == 0)
+            {
+                MessageBox.Show("Không thể tải danh sách sản phẩm!", "Lỗi",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            var filteredList = danhSach.Where(sp =>
+                sp.MaSanPham.ToLower().Contains(searchText.ToLower()) ||
+                sp.TenSanPham.ToLower().Contains(searchText.ToLower()) ||
+                sp.MaLoai.ToLower().Contains(searchText.ToLower())).ToList();
+
+            DataTable table = new DataTable();
+            table.Columns.Add("MaSanPham");
+            table.Columns.Add("TenSanPham");
+            table.Columns.Add("DonGia");
+            table.Columns.Add("MaLoai");
+            table.Columns.Add("TrangThai");
+
+            foreach (var sp in filteredList)
+            {
+                table.Rows.Add(
+                    sp.MaSanPham,
+                    sp.TenSanPham,
+                    sp.DonGia,
+                    sp.MaLoai,
+                    sp.TrangThai ? "Bán" : "Ngưng Bán"
+                );
+            }
+
+            dgrDanhSachSP.DataSource = null; // Clear existing data
+            dgrDanhSachSP.DataSource = table;
+
+            dgrDanhSachSP.Columns["MaSanPham"].HeaderText = "Mã Sản Phẩm";
+            dgrDanhSachSP.Columns["TenSanPham"].HeaderText = "Tên Sản Phẩm";
+            dgrDanhSachSP.Columns["DonGia"].HeaderText = "Đơn Giá";
+            dgrDanhSachSP.Columns["MaLoai"].HeaderText = "Mã Loại";
+            dgrDanhSachSP.Columns["TrangThai"].HeaderText = "Trạng Thái";
+
+            if (filteredList.Count == 0)
+            {
+                MessageBox.Show("Không tìm thấy sản phẩm nào!", "Thông báo",
+                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
         }
     }
 }

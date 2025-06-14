@@ -214,6 +214,13 @@ namespace GUI_PolyCafe
             }
 
             List<LoaiSanPham> danhSach = busLoaiSanPham.GetLoaiSanPhamList();
+            if (danhSach == null || danhSach.Count == 0)
+            {
+                MessageBox.Show("Không thể tải danh sách loại sản phẩm!", "Lỗi",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
             var filteredList = danhSach.Where(loai =>
                 loai.MaLoai.ToLower().Contains(searchText.ToLower()) ||
                 loai.TenLoai.ToLower().Contains(searchText.ToLower()) ||

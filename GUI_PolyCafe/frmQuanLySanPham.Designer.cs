@@ -48,8 +48,8 @@
             this.txtTenSanPham = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.btnTimKiem = new System.Windows.Forms.Button();
+            this.txtTimKiem = new System.Windows.Forms.TextBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.btnThem = new System.Windows.Forms.Button();
             this.btnLamMoi = new System.Windows.Forms.Button();
@@ -212,6 +212,7 @@
             // 
             this.pbHinhAnh.BackColor = System.Drawing.Color.White;
             this.pbHinhAnh.BackgroundImage = global::GUI_PolyCafe.Properties.Resources.th;
+            this.pbHinhAnh.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pbHinhAnh.Image = global::GUI_PolyCafe.Properties.Resources.th;
             this.pbHinhAnh.Location = new System.Drawing.Point(259, 239);
             this.pbHinhAnh.Name = "pbHinhAnh";
@@ -294,8 +295,8 @@
             // groupBox5
             // 
             this.groupBox5.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox5.Controls.Add(this.button1);
-            this.groupBox5.Controls.Add(this.textBox1);
+            this.groupBox5.Controls.Add(this.btnTimKiem);
+            this.groupBox5.Controls.Add(this.txtTimKiem);
             this.groupBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
             this.groupBox5.ForeColor = System.Drawing.SystemColors.Desktop;
             this.groupBox5.Location = new System.Drawing.Point(12, 88);
@@ -305,29 +306,30 @@
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Tìm Kiếm";
             // 
-            // button1
+            // btnTimKiem
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.Window;
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
-            this.button1.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.button1.Image = global::GUI_PolyCafe.Properties.Resources.searching;
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button1.Location = new System.Drawing.Point(11, 20);
-            this.button1.Name = "button1";
-            this.button1.Padding = new System.Windows.Forms.Padding(0, 0, 10, 0);
-            this.button1.Size = new System.Drawing.Size(144, 35);
-            this.button1.TabIndex = 17;
-            this.button1.Text = "Tìm Kiếm";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnTimKiem.BackColor = System.Drawing.SystemColors.Window;
+            this.btnTimKiem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnTimKiem.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.btnTimKiem.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.btnTimKiem.Image = global::GUI_PolyCafe.Properties.Resources.searching;
+            this.btnTimKiem.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnTimKiem.Location = new System.Drawing.Point(11, 20);
+            this.btnTimKiem.Name = "btnTimKiem";
+            this.btnTimKiem.Padding = new System.Windows.Forms.Padding(0, 0, 10, 0);
+            this.btnTimKiem.Size = new System.Drawing.Size(144, 35);
+            this.btnTimKiem.TabIndex = 17;
+            this.btnTimKiem.Text = "Tìm Kiếm";
+            this.btnTimKiem.UseVisualStyleBackColor = false;
+            this.btnTimKiem.Click += new System.EventHandler(this.btnTimKiem_Click_1);
             // 
-            // textBox1
+            // txtTimKiem
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
-            this.textBox1.Location = new System.Drawing.Point(161, 26);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(371, 27);
-            this.textBox1.TabIndex = 16;
+            this.txtTimKiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
+            this.txtTimKiem.Location = new System.Drawing.Point(161, 26);
+            this.txtTimKiem.Name = "txtTimKiem";
+            this.txtTimKiem.Size = new System.Drawing.Size(371, 27);
+            this.txtTimKiem.TabIndex = 16;
             // 
             // groupBox3
             // 
@@ -429,6 +431,8 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.groupBox1);
             this.DoubleBuffered = true;
+            this.MaximumSize = new System.Drawing.Size(1205, 766);
+            this.MinimumSize = new System.Drawing.Size(1205, 766);
             this.Name = "frmQuanLySanPham";
             this.Text = "frmQuanLySanPham";
             this.Load += new System.EventHandler(this.frmQuanLySanPham_Load);
@@ -469,8 +473,8 @@
         private System.Windows.Forms.TextBox txtTenSanPham;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.GroupBox groupBox5;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button btnTimKiem;
+        private System.Windows.Forms.TextBox txtTimKiem;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Button btnThem;
         private System.Windows.Forms.Button btnLamMoi;

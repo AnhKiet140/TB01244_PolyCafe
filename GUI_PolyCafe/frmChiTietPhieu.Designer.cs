@@ -399,6 +399,8 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
             this.DoubleBuffered = true;
+            this.MaximumSize = new System.Drawing.Size(1231, 732);
+            this.MinimumSize = new System.Drawing.Size(1231, 732);
             this.Name = "frmChiTietPhieu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmChiTietPhieu";

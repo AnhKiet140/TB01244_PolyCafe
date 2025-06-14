@@ -124,9 +124,6 @@
   <data name="Thêm" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Thêm.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="content-management-system" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\content-management-system.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="product-selling" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\product-selling.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -135,6 +132,9 @@
   </data>
   <data name="positive" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\positive.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CÁCH SỬ DỤNG 3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CÁCH SỬ DỤNG 3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="exit1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\exit1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -156,6 +156,9 @@
   </data>
   <data name="xoá 2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\xoá 2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CÁCH SỬ DỤNG 1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CÁCH SỬ DỤNG 1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="BACK_Button_Poly" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BACK_Button_Poly.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -220,14 +223,17 @@
   <data name="fix" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\fix.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="eye_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\eye_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="POLY" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\POLY.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Main_PoLy" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Main_PoLy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="làm mới" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\làm mới.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="POLY_GioiThieu" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\POLY_GioiThieu.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="log out" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\log out.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -238,11 +244,11 @@
   <data name="system" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\system.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="BACK_2_POLY" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\BACK_2_POLY.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="statistics" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\statistics.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="QLsanpham" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\QLsanpham.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="eye_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\eye_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Xoá" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Xoá.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -259,11 +265,14 @@
   <data name="bar-chart" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bar-chart.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Instruct" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Instruct.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="black_ham" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\black_ham.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="xoá 21" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\xoá 21.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="POLY (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\POLY (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="BACK1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BACK1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -283,8 +292,11 @@
   <data name="erase" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\erase.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="black_ham" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\black_ham.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="QLsanpham" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\QLsanpham.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CÁCH SỬ DỤNG 2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CÁCH SỬ DỤNG 2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="search 24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\search 24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -298,20 +310,32 @@
   <data name="BACKGROUD_Poly" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BACKGROUD_Poly.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="searching" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\searching.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="more" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\more.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="wrench" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\wrench.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="banker-flat-icon-png_2383991" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\banker-flat-icon-png_2383991.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Loaisanpham" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Loaisanpham.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="statistics" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\statistics.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="POLY_GioiThieu1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\POLY_GioiThieu1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="searching" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\searching.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="BACK_2_POLY" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BACK_2_POLY.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Instruct" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Instruct.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="banker-flat-icon-png_238399" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\banker-flat-icon-png_238399.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="search" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\search.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -319,10 +343,10 @@
   <data name="refresh-data1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\refresh-data1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="POLY" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\POLY.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="content-management-system" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\content-management-system.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="POLY_GioiThieu" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\POLY_GioiThieu.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="question-mark1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\question-mark1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

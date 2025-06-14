@@ -33,6 +33,7 @@
             this.picHienThiMatKhau = new System.Windows.Forms.PictureBox();
             this.picMatKhauMoi = new System.Windows.Forms.PictureBox();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.txtTenNhanVien = new Guna.UI2.WinForms.Guna2TextBox();
             this.picHienThiMatKhauMoi = new System.Windows.Forms.PictureBox();
             this.txtXacNhanMatKhauMoi = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtMatKhauMoi = new Guna.UI2.WinForms.Guna2TextBox();
@@ -41,7 +42,6 @@
             this.label7 = new System.Windows.Forms.Label();
             this.btnDangNhap = new Guna.UI2.WinForms.Guna2GradientButton();
             this.txtMaNhanVien = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txtTenNhanVien = new Guna.UI2.WinForms.Guna2TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.picMatKhauCu)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picHienThiMatKhau)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picMatKhauMoi)).BeginInit();
@@ -114,6 +114,31 @@
             this.guna2Panel1.ShadowDecoration.Shadow = new System.Windows.Forms.Padding(0, 0, 9, 9);
             this.guna2Panel1.Size = new System.Drawing.Size(704, 607);
             this.guna2Panel1.TabIndex = 10;
+            // 
+            // txtTenNhanVien
+            // 
+            this.txtTenNhanVien.Animated = true;
+            this.txtTenNhanVien.AutoRoundedCorners = true;
+            this.txtTenNhanVien.BorderColor = System.Drawing.Color.Gray;
+            this.txtTenNhanVien.BorderRadius = 25;
+            this.txtTenNhanVien.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtTenNhanVien.DefaultText = "";
+            this.txtTenNhanVien.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtTenNhanVien.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtTenNhanVien.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtTenNhanVien.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtTenNhanVien.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtTenNhanVien.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtTenNhanVien.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtTenNhanVien.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtTenNhanVien.Location = new System.Drawing.Point(51, 189);
+            this.txtTenNhanVien.Name = "txtTenNhanVien";
+            this.txtTenNhanVien.PasswordChar = '\0';
+            this.txtTenNhanVien.PlaceholderText = "Tên Nhân Viên";
+            this.txtTenNhanVien.ReadOnly = true;
+            this.txtTenNhanVien.SelectedText = "";
+            this.txtTenNhanVien.Size = new System.Drawing.Size(523, 53);
+            this.txtTenNhanVien.TabIndex = 14;
             // 
             // picHienThiMatKhauMoi
             // 
@@ -271,42 +296,19 @@
             this.txtMaNhanVien.Size = new System.Drawing.Size(523, 53);
             this.txtMaNhanVien.TabIndex = 0;
             // 
-            // txtTenNhanVien
-            // 
-            this.txtTenNhanVien.Animated = true;
-            this.txtTenNhanVien.AutoRoundedCorners = true;
-            this.txtTenNhanVien.BorderColor = System.Drawing.Color.Gray;
-            this.txtTenNhanVien.BorderRadius = 25;
-            this.txtTenNhanVien.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtTenNhanVien.DefaultText = "";
-            this.txtTenNhanVien.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtTenNhanVien.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtTenNhanVien.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtTenNhanVien.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtTenNhanVien.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtTenNhanVien.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtTenNhanVien.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtTenNhanVien.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtTenNhanVien.Location = new System.Drawing.Point(51, 189);
-            this.txtTenNhanVien.Name = "txtTenNhanVien";
-            this.txtTenNhanVien.PasswordChar = '\0';
-            this.txtTenNhanVien.PlaceholderText = "Tên Nhân Viên";
-            this.txtTenNhanVien.ReadOnly = true;
-            this.txtTenNhanVien.SelectedText = "";
-            this.txtTenNhanVien.Size = new System.Drawing.Size(523, 53);
-            this.txtTenNhanVien.TabIndex = 14;
-            // 
             // frmDoiMatKhau
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.BackColor = System.Drawing.Color.NavajoWhite;
             this.BackgroundImage = global::GUI_PolyCafe.Properties.Resources.POLY_ResetPassWord;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1288, 799);
             this.Controls.Add(this.guna2Panel1);
             this.DoubleBuffered = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximumSize = new System.Drawing.Size(1288, 799);
+            this.MinimumSize = new System.Drawing.Size(1288, 799);
             this.Name = "frmDoiMatKhau";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ĐỔI MẬT KHẨU";

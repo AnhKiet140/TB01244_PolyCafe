@@ -48,6 +48,7 @@
     <Compile Include="DALSanPham.cs" />
     <Compile Include="DALTheLuuDong.cs" />
     <Compile Include="DALThongKe.cs" />
+    <Compile Include="DALThongTin.cs" />
     <Compile Include="DBUtil.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

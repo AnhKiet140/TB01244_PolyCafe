@@ -97,7 +97,96 @@ namespace GUI_PolyCafe
             }
         }
 
-        private void btnThem_Click(object sender, EventArgs e)
+
+        private void frmQuanLyTheLuuDong_Load(object sender, EventArgs e)
+        {
+            ClearForm();
+            LoadDanhSachTheLuuDong();
+        }
+
+        private void dgvTheLuuDong_SelectionChanged(object sender, EventArgs e)
+        {
+            if (dgvTheLuuDong.SelectedRows.Count > 0)
+            {
+                var row = dgvTheLuuDong.SelectedRows[0];
+
+                txtMaThe.Text = row.Cells["MaThe"].Value?.ToString();
+                txtChuSoHuu.Text = row.Cells["ChuSoHuu"].Value?.ToString();
+                string trangThai = row.Cells["TrangThai"].Value?.ToString();
+                chkHoatDong.Checked = trangThai == "Hoạt Động";
+                chkKhongHoatDong.Checked = trangThai == "Không Hoạt Động";
+
+                txtMaThe.Enabled = false; // Disable MaThe for editing
+            }
+        }
+
+        private void chkHoatDong_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chkKhongHoatDong.Checked)
+                chkHoatDong.Checked = false;
+        }
+
+        private void chkKhongHoatDong_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chkHoatDong.Checked)
+                chkKhongHoatDong.Checked = false;
+        }
+
+        private void btnTimKiem_Click_1(object sender, EventArgs e)
+        {
+            string searchText = txtTimKiem.Text.Trim();
+
+            if (string.IsNullOrEmpty(searchText))
+            {
+                MessageBox.Show("Vui lòng nhập từ khóa tìm kiếm!", "Thông báo",
+                    MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                LoadDanhSachTheLuuDong(); // Reload full list if no search term
+                return;
+            }
+
+            BUSTheLuuDong busTheLuuDong = new BUSTheLuuDong();
+            List<TheLuuDong> danhSach = busTheLuuDong.GetTheLuuDongList();
+
+            if (danhSach == null || danhSach.Count == 0)
+            {
+                MessageBox.Show("Không thể tải danh sách thẻ lưu động!", "Lỗi",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            var filteredList = danhSach.Where(the =>
+                the.MaThe.ToLower().Contains(searchText.ToLower()) ||
+                the.ChuSoHuu.ToLower().Contains(searchText.ToLower())).ToList();
+
+            DataTable table = new DataTable();
+            table.Columns.Add("MaThe");
+            table.Columns.Add("ChuSoHuu");
+            table.Columns.Add("TrangThai");
+
+            foreach (var the in filteredList)
+            {
+                table.Rows.Add(
+                    the.MaThe,
+                    the.ChuSoHuu,
+                    the.TrangThai ? "Hoạt động" : "Ngưng hoạt động"
+                );
+            }
+
+            dgvTheLuuDong.DataSource = null;
+            dgvTheLuuDong.DataSource = table;
+
+            dgvTheLuuDong.Columns["MaThe"].HeaderText = "Mã Thẻ";
+            dgvTheLuuDong.Columns["ChuSoHuu"].HeaderText = "Chủ Sở Hữu";
+            dgvTheLuuDong.Columns["TrangThai"].HeaderText = "Trạng Thái";
+
+            if (filteredList.Count == 0)
+            {
+                MessageBox.Show("Không tìm thấy thẻ lưu động nào!", "Thông báo",
+                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+
+        private void btnThem_Click_1(object sender, EventArgs e)
         {
             BUSTheLuuDong busTheLuuDong = new BUSTheLuuDong();
             try
@@ -138,7 +227,7 @@ namespace GUI_PolyCafe
             }
         }
 
-        private void btnSua_Click(object sender, EventArgs e)
+        private void btnSua_Click_1(object sender, EventArgs e)
         {
             BUSTheLuuDong busTheLuuDong = new BUSTheLuuDong();
             try
@@ -180,7 +269,7 @@ namespace GUI_PolyCafe
             }
         }
 
-        private void btnXoa_Click(object sender, EventArgs e)
+        private void btnXoa_Click_1(object sender, EventArgs e)
         {
             string maThe = txtMaThe.Text.Trim();
             string chuSoHuu = txtChuSoHuu.Text.Trim();
@@ -223,44 +312,10 @@ namespace GUI_PolyCafe
             }
         }
 
-        private void btnLamMoi_Click(object sender, EventArgs e)
+        private void btnLamMoi_Click_1(object sender, EventArgs e)
         {
             ClearForm();
             LoadDanhSachTheLuuDong();
-        }
-
-        private void frmQuanLyTheLuuDong_Load(object sender, EventArgs e)
-        {
-            ClearForm();
-            LoadDanhSachTheLuuDong();
-        }
-
-        private void dgvTheLuuDong_SelectionChanged(object sender, EventArgs e)
-        {
-            if (dgvTheLuuDong.SelectedRows.Count > 0)
-            {
-                var row = dgvTheLuuDong.SelectedRows[0];
-
-                txtMaThe.Text = row.Cells["MaThe"].Value?.ToString();
-                txtChuSoHuu.Text = row.Cells["ChuSoHuu"].Value?.ToString();
-                string trangThai = row.Cells["TrangThai"].Value?.ToString();
-                chkHoatDong.Checked = trangThai == "Hoạt Động";
-                chkKhongHoatDong.Checked = trangThai == "Không Hoạt Động";
-
-                txtMaThe.Enabled = false; // Disable MaThe for editing
-            }
-        }
-
-        private void chkHoatDong_CheckedChanged(object sender, EventArgs e)
-        {
-            if (chkKhongHoatDong.Checked)
-                chkHoatDong.Checked = false;
-        }
-
-        private void chkKhongHoatDong_CheckedChanged(object sender, EventArgs e)
-        {
-            if (chkHoatDong.Checked)
-                chkKhongHoatDong.Checked = false;
         }
     }
 }

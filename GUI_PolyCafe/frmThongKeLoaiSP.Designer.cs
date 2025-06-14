@@ -169,6 +169,8 @@
             this.Controls.Add(this.dgrDanhSachThongKe);
             this.Controls.Add(this.groupBox2);
             this.DoubleBuffered = true;
+            this.MaximumSize = new System.Drawing.Size(1205, 766);
+            this.MinimumSize = new System.Drawing.Size(1205, 766);
             this.Name = "frmThongKeLoaiSP";
             this.Text = "frmThongKeLoaiSP";
             this.Load += new System.EventHandler(this.frmThongKeLoaiSP_Load);

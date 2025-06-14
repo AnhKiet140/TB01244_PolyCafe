@@ -184,6 +184,7 @@
             this.txtMaPhieu.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
             this.txtMaPhieu.Location = new System.Drawing.Point(150, 91);
             this.txtMaPhieu.Name = "txtMaPhieu";
+            this.txtMaPhieu.ReadOnly = true;
             this.txtMaPhieu.Size = new System.Drawing.Size(381, 26);
             this.txtMaPhieu.TabIndex = 11;
             // 
@@ -375,6 +376,7 @@
             this.btnTimKiem.TabIndex = 17;
             this.btnTimKiem.Text = "Tìm Kiếm";
             this.btnTimKiem.UseVisualStyleBackColor = false;
+            this.btnTimKiem.Click += new System.EventHandler(this.btnTimKiem_Click);
             // 
             // txtTimKiem
             // 
@@ -399,6 +401,8 @@
             this.Controls.Add(this.label1);
             this.DoubleBuffered = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximumSize = new System.Drawing.Size(1213, 743);
+            this.MinimumSize = new System.Drawing.Size(1213, 743);
             this.Name = "frmQuanLyPhieuBanHang";
             this.Text = "Quản Lý Phiếu Bán Hàng";
             this.Load += new System.EventHandler(this.frmQuanLyPhieuBanHang_Load);

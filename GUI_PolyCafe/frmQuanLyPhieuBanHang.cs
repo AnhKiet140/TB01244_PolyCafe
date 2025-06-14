@@ -336,5 +336,94 @@ namespace GUI_PolyCafe
             LoadNhanVien();
             LoadDanhSachPhieu("");
         }
+
+        private void btnTimKiem_Click(object sender, EventArgs e)
+        {
+            string searchText = txtTimKiem.Text.Trim();
+
+            if (string.IsNullOrEmpty(searchText))
+            {
+                MessageBox.Show("Vui lòng nhập từ khóa tìm kiếm!", "Thông báo",
+                    MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                LoadDanhSachPhieu(""); // Reload full list if no search term
+                return;
+            }
+
+            BUSPhieuBanHang busPhieuBanHang = new BUSPhieuBanHang();
+            List<PhieuBanHang> danhSach = busPhieuBanHang.GetListPhieuBanHang(null);
+
+            if (danhSach == null || danhSach.Count == 0)
+            {
+                MessageBox.Show("Không thể tải danh sách phiếu bán hàng!", "Lỗi",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            if (!AuthUtil.user.VaiTro)
+            {
+                danhSach = danhSach.Where(x => x.MaNhanVien == AuthUtil.user.MaNhanVien).ToList();
+            }
+
+            var filteredList = danhSach.Where(pbh =>
+                pbh.MaPhieu.ToLower().Contains(searchText.ToLower()) ||
+                pbh.MaThe.ToLower().Contains(searchText.ToLower()) ||
+                pbh.ChuSoHuu.ToLower().Contains(searchText.ToLower()) ||
+                pbh.MaNhanVien.ToLower().Contains(searchText.ToLower()) ||
+                pbh.HoTen.ToLower().Contains(searchText.ToLower())).ToList();
+
+            DataTable table = new DataTable();
+            table.Columns.Add("MaPhieu");
+            table.Columns.Add("MaThe");
+            table.Columns.Add("ChuSoHuu");
+            table.Columns.Add("MaNhanVien");
+            table.Columns.Add("HoTen");
+            table.Columns.Add("NgayTao");
+            table.Columns.Add("TrangThai");
+
+            foreach (var pbh in filteredList)
+            {
+                table.Rows.Add(
+                    pbh.MaPhieu,
+                    pbh.MaThe,
+                    pbh.ChuSoHuu,
+                    pbh.MaNhanVien,
+                    pbh.HoTen,
+                    pbh.NgayTao.ToString("dd/MM/yyyy"),
+                    pbh.TrangThai ? "Hoạt động" : "Ngưng hoạt động"
+                );
+            }
+
+            dgrDanhSachPhieu.DataSource = null;
+            dgrDanhSachPhieu.DataSource = table;
+
+            if (!dgrDanhSachPhieu.Columns.Contains("ThanhToan"))
+            {
+                DataGridViewImageColumn buttonColumn = new DataGridViewImageColumn();
+                buttonColumn.Name = "ThanhToan";
+                buttonColumn.HeaderText = "Thanh Toán";
+                buttonColumn.DefaultCellStyle.BackColor = Color.LightBlue;
+                buttonColumn.DefaultCellStyle.ForeColor = Color.DarkBlue;
+                buttonColumn.DefaultCellStyle.Font = new Font("Arial", 10, FontStyle.Bold);
+                dgrDanhSachPhieu.Columns.Add(buttonColumn);
+            }
+            dgrDanhSachPhieu.Columns["ThanhToan"].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+            dgrDanhSachPhieu.RowTemplate.Height = 50;
+
+            dgrDanhSachPhieu.Columns["MaPhieu"].HeaderText = "Mã Phiếu";
+            dgrDanhSachPhieu.Columns["MaThe"].HeaderText = "Mã Thẻ";
+            dgrDanhSachPhieu.Columns["ChuSoHuu"].HeaderText = "Chủ Sở Hữu";
+            dgrDanhSachPhieu.Columns["MaNhanVien"].HeaderText = "Mã Nhân Viên";
+            dgrDanhSachPhieu.Columns["HoTen"].HeaderText = "Họ Tên";
+            dgrDanhSachPhieu.Columns["NgayTao"].HeaderText = "Ngày Tạo";
+            dgrDanhSachPhieu.Columns["TrangThai"].HeaderText = "Trạng Thái";
+
+            dgrDanhSachPhieu.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+
+            if (filteredList.Count == 0)
+            {
+                MessageBox.Show("Không tìm thấy phiếu bán hàng nào!", "Thông báo",
+                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
     }
 }

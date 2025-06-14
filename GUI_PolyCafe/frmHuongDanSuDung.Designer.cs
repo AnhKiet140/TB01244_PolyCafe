@@ -1,6 +1,6 @@
 ﻿namespace GUI_PolyCafe
 {
-    partial class frmQuanLyTaiKhoan
+    partial class frmHuongDanSuDung
     {
         /// <summary>
         /// Required designer variable.
@@ -28,19 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmQuanLyTaiKhoan));
             this.SuspendLayout();
             // 
-            // frmQuanLyTaiKhoan
+            // frmHuongDanSuDung
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1473, 817);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MaximumSize = new System.Drawing.Size(1489, 856);
-            this.MinimumSize = new System.Drawing.Size(1489, 856);
-            this.Name = "frmQuanLyTaiKhoan";
-            this.Text = "Quản Lý Tài Khoản";
+            this.BackgroundImage = global::GUI_PolyCafe.Properties.Resources.CÁCH_SỬ_DỤNG_1;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(1242, 695);
+            this.DoubleBuffered = true;
+            this.MaximumSize = new System.Drawing.Size(1258, 734);
+            this.MinimumSize = new System.Drawing.Size(1258, 734);
+            this.Name = "frmHuongDanSuDung";
+            this.Text = "frmHuongDanSuDung";
             this.ResumeLayout(false);
 
         }

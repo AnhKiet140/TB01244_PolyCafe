@@ -64,10 +64,8 @@ namespace GUI_PolyCafe
 
         private void button1_Click(object sender, EventArgs e)
         {
-            //..
-            // Your code
-            //..
-            hideSubMenu();
+            frmThongTinTaiKhoan taiKhoan = new frmThongTinTaiKhoan();
+            taiKhoan.ShowDialog();
         }
 
         private void button2_Click(object sender, EventArgs e)
